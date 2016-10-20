@@ -21,3 +21,8 @@ Get the most out of your classes with teacher information. Easily have access to
 
 === Schedule ===
 Never be late again with a live countdown to class changes and an easy to access bell schedule based on your lunch.
+
+Screenshots
+![Alt text](/App Screenshots/MainScreen.jpg?raw=true “Home”)
+![Alt text](/App\ Screenshots/Grades.jpg?raw=true “Grades”)
+![Alt text](/App\ Screenshots/Schedule.jpg?raw=true “Schedule”)
