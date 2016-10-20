@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E76DAFB1-A512-47C5-A3AF-60AE55BAAE9D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CyWoods</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9946965C-FA64-4CA1-AEA7-2C969AAA4014</key>
+		<string>https://bitbucket.org/hassaanraza/wildcat-communicator-experimental.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Documents/Developer/Wildcat Communicator/CyWoodsApp/CyWoods.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9946965C-FA64-4CA1-AEA7-2C969AAA4014</key>
+		<string>../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/hassaanraza/wildcat-communicator-experimental.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9946965C-FA64-4CA1-AEA7-2C969AAA4014</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9946965C-FA64-4CA1-AEA7-2C969AAA4014</string>
+			<key>IDESourceControlWCCName</key>
+			<string>wildcat-communicator-experimental</string>
+		</dict>
+	</array>
+</dict>
+</plist>

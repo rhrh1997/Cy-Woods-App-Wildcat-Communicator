@@ -1,0 +1,948 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head1"><title>
+	CAITLIN CARSON - Epsilen ePortfolio
+</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="verify-v1" content="rVMzeoV4C01koYQckNipAcZUW+paYsLVYaCb7BT2Qug=" /><meta id="ctl00_mDescription" name="description" content="CAITLIN CARSON ePortfolio. Powered By Epsilen" /><meta id="ctl00_mKeywords" name="keywords" content="Epsilen, ePortfolio, TX101907, CYPRESS-FAIRBANKS ISD, CAITLIN, CARSON, , , , Powered By Epsilen" /><meta name="Author" content="Epsilen Environment, Epsilen LLC" /><meta name="ROBOTS" content="NOIMAGEINDEX, NOIMAGECLICK" /><link id="ctl00_lnkPublicTheme" rel="stylesheet" type="text/css" title="Public Theme" href="http://www.epsilen.com/Style/PublicThemeTurquoisPink/PublicTheme.css" /><script type="text/javascript" src="/JS/EpsilenUtility.js">
+
+</script><script type="text/javascript" src="/JS/FootPrint/mootools.js">
+
+</script><script type="text/javascript" src="/JS/FootPrint/side-bar.js">
+
+</script>
+    <script type="text/javascript">
+        var baseURL = 'http://www.epsilen.com';
+        var isPreview = "0"
+        var accessKey='';
+        var icon_root_path='http://www.epsilen.com/Images/Icons/';
+        icon_root_path=icon_root_path.replace('~/',baseURL + '/');
+        var tree_root_path='http://www.epsilen.com/Images/csh_vista';
+        tree_root_path=tree_root_path.replace('~/',baseURL + '/');
+        
+        function chkAccessKey()
+        {
+            alert('Invalid access key.');
+            return false;
+        }
+        
+        function changeAccessKey(pAccessKey)
+        {
+        }
+        
+        function showDefaultIcon(obj)
+        {
+            obj.src=baseURL + '/images/Icons/CustomMenuIcons/icon_MenuComputer.gif';
+        }
+        
+        function onImageMissingHeader(obj)
+        {
+            obj.src= baseURL + '/images/Epsilen_Logo_White_Small.gif';
+        }
+        
+        function openPopup(obj, height, width)
+        {
+            var path = obj.getAttribute('popupPath');
+            openPopupWindow(path, 'PERfileFolderInfo', height,width);
+        }
+        
+        function quickLinkClick()
+        {   
+            if(readCookie("Epsilen_PER_Public") != null)
+            {
+                createCookie("Epsilen_PER_Public", (readCookie("Epsilen_PER_Public") == "Closed" ? "Open" : "Closed") , 0);
+            }
+            else
+            {
+                createCookie("Epsilen_PER_Public", "Closed" , 0);
+            }
+        }
+    
+        function changeClass2(divId)
+        {
+            mainMenu = document.getElementById('lnb_container');
+		    thisOne = document.getElementById(divId);
+		    items = mainMenu.getElementsByTagName("h3");
+		    for(var i=0; i<items.length;i++)
+		    {	
+			    var itemId=items[i].id;
+	            if(document.getElementById(itemId).className=="h3" || document.getElementById(itemId).className=="selected" ||document.getElementById(itemId).className=="h3 selected" )
+	            {
+		            document.getElementById(itemId).className="h3";
+	            }
+	            else
+	            {
+		            thisOne.className="selected";
+	            }
+	        }		
+            document.getElementById(divId).className="h3 selected";
+        }
+        
+        function quickLinkClick()
+        {   
+            if(readCookie("Epsilen_PER_Public") != null)
+            {
+                createCookie("Epsilen_PER_Public", (readCookie("Epsilen_PER_Public") == "Closed" ? "Open" : "Closed") , 0);
+            }
+            else
+            {
+                createCookie("Epsilen_PER_Public", "Closed" , 0);
+            }
+        }
+        
+        function click(e) 
+        {
+            alert('You are viewing this ePortfolio in "Preview" mode. This means that all links, buttons, and other options are disabled. This mode is for viewing how an ePortfolio will look and cannot be used to access any tools, options, or other pages.');
+            return false;
+        }
+        
+        function SubmiAccessKey()
+        {
+            WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("ctl00$btnGo", "", true, "", "", false, false))
+        }
+        
+        function ValidateAccessKey()
+        {
+            if(document.getElementById('ctl00_txtAccessKey').value.length<=0)
+            {
+                alert('- Access key is required.');
+                return false;
+            }
+            __doPostBack('ctl00$btnGoNew','')
+        }
+        
+        function onAccessKeyPress(e)
+        {
+            var key;
+            if(window.event)
+                key = window.event.keyCode;
+            else
+                key = e.which;
+                  
+            if(key==13)
+            {
+                ValidateAccessKey();
+                return false;
+            }
+            return true;
+        }
+        
+        function onBodyLoad()
+        {
+            if(readCookie("Epsilen_PER_Public") == null)
+            {
+                setTimeout('extendContract()',1000);
+            }
+            else if(readCookie("Epsilen_PER_Public") == "Open")
+            {
+                setTimeout('extendContract()',1000);
+            }
+            
+            var maxW = 530;
+            if(document.getElementById("dvContainer"))
+            {
+                var pix=document.getElementById("dvContainer").getElementsByTagName('img');
+                for (i=0; i<pix.length; i++) {
+                    w=pix[i].width;
+                    h=pix[i].height;
+                    if (w > maxW) {
+		                f=1-((w - maxW) / w);
+                        pix[i].width=w * f;
+                        pix[i].height=h * f;
+		                if(pix[i].width == w)
+			                pix[i].style.display = "none";
+                    }
+                }
+            }
+            changeAccessKey(accessKey);
+        }
+        
+        function toggleChannels(ctrl)
+        {
+            if(document.getElementById(ctrl))
+            {
+                if(document.getElementById(ctrl).style.display == "")
+                {
+                    document.getElementById(ctrl).style.display = "none";
+                }
+                else
+                {
+                    document.getElementById(ctrl).style.display = "";
+                }
+            }
+        }
+        
+//        if(isPreview == "1")
+//        {
+//            if (document.layers) {
+//                document.captureEvents(Event.MOUSEDOWN);
+//            }
+//            document.onmousedown=click;
+//        }
+        
+        var from_time = new Date();
+        from_time = from_time.getTime();
+
+        function show_loading_time()
+        {
+            var to_time = new Date();
+            to_time = to_time.getTime();
+            var secs = (to_time - from_time) /1000;
+            document.getElementById("loadTime").innerHTML = "It took <b>"+secs+"</b> seconds to load this page.";
+        }
+        
+        function logoMissing(ctrl)
+        {
+            var themPath = document.getElementById('ctl00_lnkPublicTheme').href + '';
+            var logoPath = themPath.substr(0,themPath.lastIndexOf("/")) + '/images/epsilenLogo190x90.png';
+            ctrl.src = logoPath;
+        }
+
+        width = 190;
+        function HideContentDIV() {
+            if (document.getElementById("dvPersonalPublicContentArea")) {
+                document.getElementById("dvPersonalPublicContentArea").style.width = "744px";
+            }
+            document.getElementById("sideBarContents").style.display = "none";
+        }
+    </script>
+
+<link rel="shortcut icon" href="http://www.epsilen.com/favicon.ico"><meta http-equiv="x-ua-compatible" content="IE=9" /></head>
+<body onload="onBodyLoad();" class="publicePortfolio">
+    <form name="aspnetForm" method="post" action="ccarson25" id="aspnetForm">
+<input type="hidden" name="__NEXTPAGE_drpWelcomeNotes" id="__NEXTPAGE_drpWelcomeNotes" value="0" />
+<input type="hidden" name="__SORTBY_drpWelcomeNotes" id="__SORTBY_drpWelcomeNotes" value="" />
+<input type="hidden" name="__TOTALPAGE_drpWelcomeNotes" id="__TOTALPAGE_drpWelcomeNotes" value="1" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPBYQtSDRzSUFBQUFBQUFFQU95OUIyQWNTWllsSmk5dHludC9TdlZLMStCMG9RaUFZQk1rMkpCQUVPekJpTTNta3V3ZGFVY2pLYXNxZ2NwbFZtVmRaaFpBek8yZHZQZmVlKys5OTk1Nzc3MzN1anVkVGlmMzMvOC9YR1prQVd6MnprcmF5WjRoZ0tySUh6OStmQjgvSXY3dlgvTTMvWFYvN05NSER3OE85dlllN1A2bXY4MnY4d3QrODI5WFRmdFZrOWZIMDJtMVhyWm5UN2Z1L0Q2dnI1czJYNHpQbHUybis2TjAwVXlydWl3bW8vUW44N29wcXVWbisrTWQvRGRLVDlabHU2N3p6NWI1dXEyemNwUytYRS9LWXZwNzVkZHZxcmY1OHJQSmd3ZlovZW45VDNjZjN0dlBkdzRlL3ZwN0QrL2ZQOWk1OXd0K3ZaZDFmbDY4KzNWL2JEck42cVphN3QzL2JYNnQ4OS8wTi8xdGZxMWY4RnY4L3IvLzAvdzhJOENFVWQ0MEJPdlgvZlVFN095MytYVityVi9yTjUzOU5yL0JyL1ZybytXdlA2MldiYjVzZjkzdGsrT3pOOC9QWHFRbng2OWVmL2tpelY5V2RYdGVsVVUxVGw5V1YzbWR6OUluMStucHFpbktmRG43dFg0ZGV2dDMrYlYvM2Q5ZlB4aDVMNHpTTjcvMzdzN3V3NTBITkxqZjUrV3IwOWV2dDU4ZG43MTZjdnppOTNxZG5yMStTaDlMWnlQdGJaVEtmN0dPZm4yZytldk1hYWkvN3RONTI2NGUzYjE3ZFhVMXp1WDc4YlJhM0gzZFhwZjVYUm5mbTNtK3lOK3M2MSswcm9ybVpiRjg2MzgrbmpiTjdOZjZEWC9UMytxVFgrdlgvM1YvbXppMFgvZlgzSm45dXIvYlFFOW5pK3dpYis2ZUVkV2F1Ny91eDV0YlRadjU3MzlaTkczMjYvNFcwN2JjMmZuOTIzZmVmUHhXOGxtNWZPc2hDTHJPZnB2ZjdOZjZOWW10ZnBkZlovWUxmdDIyYU12ODEvMnRvMlQ4Ylg0dHRQdTFmc0d2M2RUVFgvYy8velVWbVFLZEIraDhPMXZPeXJ5K2U3WnNHRFA5ZTV3MTgzZS94NXJZOXMzMUt2OXMrbE12ZityRjNZTzNpN1BUejM3aG5CajY3T2xuZHgvT243eTU5K1huejc5VGZmWUwyMm9LZG56MUV3OWZ2LzN5SjcvemU2L1hUNjR1ejUrVlowK3F1M2QvT3M5bnN5OS80cFBGRjdQbStZc3YxdTNWN3pPLytMMHZkeVlIbDY4djluOXFkL1hxeGZGRjl0VXZldmpsbXljLzlmcmhzMno5NnU3eGRMZDZjUHA3VGI5Njk5WFZaNS85d3Z4ZCs5bit2UzlPNitWeDN1N3ZmUFlMWCtYbmRkN01QenY3ZlM2V1AvVjd0Yi9QbS9YT1p6Tm0zdCtFQnM1czhZWmUrblYvazVCMVo3TmY2OWZGdDcvTHIvL3JKanNIZC9kMjZIKzcrek53RXFqNjYvKzY2Y0MwV1RINkJiL2hpK3l5dU1qYS9LdTZ2TG41REN3bEhSb2htLzFhdi9GditwdXhmUDFrMFJTVE1wL1BmclBmK3RmV2IzOTk1ZTNma0NhRTVuZmRranJZK09WdjljbXYvV3RmWEZ6OE5yL20rZXpYNG5IL3VnMDQvdGY5aldkRnN5cXo2MGZMYXBrZk1qc3dHalFWdjladnpyLysySngrL2JXSll2Z08veEpsWmtDcldrNnBzN2UvN2xXZGsvSlpwdFVxWDc2c1Z1dlZkNHZsckxyYUdtTHR6OHRxa3BWM1Q2ckZvbHArT3k5WDlOSlhLMktsMWJ2ZmczbjFzK2J6ZCt1bnU4djkzWWZYMDRPZnZ2cUo0dmY2OXJkLyt2aXp6ejRlZmZ6eDZONzluZEduT3p0M0RsV0IvRHEvN3JlR1pEcWZydXVpdmI3N3ZMb29sdHdCNW5YMjIveE81NWpGWCsvWC9aM0g0N3YwUDVXMVpmVkZ2cGlRYW4xU1hJeC9lblh4QzM3enIxNDlmMWJWeCtWa3ZmakpJaWU5OHV0K2I2Q3JMNjZodW1oVU1nTjN2WGVZSkRLNmVWZkhmL1ptZVgrMmUvcGtldiswSXI3OE5ZWGVwRjVaS0gvRGs5Yy95Ymk5Zm5XU3E2UVMxbzhIY0REalVOVnl0NkFmdnovcDk4dWlXamV2MjN3MXZpak9NWlVFNVRmMjRCMjhEN3dYSkMwTzFxOFZJUHk3L0VZL3kvVDV0UjF2L3RyYTg2L2xmL2pycUFqMXBmblhjNDErZmZmcmIvQ2J3cFFScUYvdmQwbCszY1JJUW5wSVBQVzdMTEtpYkt0SDA0dzRrcGhIQlBYM25KNFh6V3k4ek50ZjhHUEZjcG5YODNaUi9ycS8zVkFqY0J2MWxYU2tiUFpyL1pnS0ZnazlZWEFPZVRwblhINU5hVSs5MThTeTIzVnhNVzhmN2U2czNoMTJJUHphY2NDL3BnSDFhdzIxK0kzdzhXLzQ2NzU3VDZHTnlOTHYwWE5aZ3VuNmVKUisvTEt1emdrRS9mb3BTVzM2OEdEbkR0UWFJL1pqQnJGRGcvR3ZHZndMQWZqOWY5Y3pjb0JPQVAzWCtqWDFPeEJKcHZrMy8yNWVFbTU1K3QyaW5FMnp0dmxkWjJESjMvclgvSjkva3pSTkg4K0t5NlBIVFZ0WHl3djZ1Y3FXS2F1OHp6NmFWbVZWUDBwL2ZJZWZ3L1NjL0pmdHB2aEIvaWdsVXJlSEh4MGROMm1XWHRUWmJFMEtQSzNPMDhkM0FTQU9aanI5OU5ONzkySmd5Qjcvd3VXa1dSMSt2ZGUvV2hhWDhQVGFhNkJBZGlvanROcjBlRTFhZmJrSjVQREFSdWxabW1mMWtoeWt4WFg2NUhWYUxOTnY1MW5aemxPYXEwVUZVNUdlMDI5cE84L1RrNm9zOHdzbXdPbHNUUlNtYjhmcGQrYzBwVURrcXplajlPYnhEU056bHM2ekdYZjA5ZDVmMWNWbFlSRDhlaUN1cXZwdHNid0FHWUFIdENWNXNpRENxN3doUWszbjZmTnM4aldCWTdxVzZYbzV5MnZMUzdVQm16VU4vTHBsTzZJM3Arc0dXRlNDUmJFOEw5ZjVjc3JqSW9ldXlOSnNScHpRRnFiVmRiV21HYXVMNW0wNnllZmthRlIxTXpaSTNqVThmNWNsd0JjRE8xdVJGdTgxTkFQd1pGM1hSTER5R295VkVkZmsyWFFPSko4VUJPUGltajc5OXQzZmk4Z3dTNStuYzNMTXdUY2tGdWwzcTJyV2pIdjQ2QWplQzNIN2J0aTAzd0xEU0tjbFVmNnpqNDVYcXpMZjV2RnVvOU9QVWg3MFp4LzkrTU9IR1BSSDcwdVJiOVBnUG03U3RtTE5rZE13cjJtaWYxY1ZrSTZjM01YNzc2c092bDFWYjlPUFR4ZGZreHQvWWJZZ1BEYTlLeU9QdmZ2NWwrbDN6NTQvUFRsKzgvcDMvVUEydTIyTEw2NVQ4bHlydXNoS0VpTmluTy9tczJYZXpMSnI1cVkzODNYTmY3Q3kybnUwdjdOOWp3eGxXdFhwaEZxc1ZsV3hiQmZFbXVQMHcvQWdCNUNFOW1KZFpuVzZYczFJaHBzUlMrbEVPWnhzWDkzazZUUkRxSm5WSTBhdm9oYTE4RnE2b0hjd2pGRktMSmMxMEFIbjlDVTVGNFk1SG1jcGd0UFBQdktNNy9SNlJicWl1WUtjYUZmanErSXQyY3lNd2ovWTVJL1NscnlFdlAzc285OS9VbWJMdDZUTjhONXNQWW0zZjN3M2k4NWFUMkRlNzRPVW45bXY5WnZFL0EzZnRQODZ4bDFrUnc0aHhLL0xVYmZ2ZWMxK3JkOXNrM2VnSVBwZXphL2pRcFZmajlvbDUrN3ZYOVA5K21zRjdzT3Z1V3Y4eU4vVU9oY1MvL3c2djh0djhPdisrRkRJVmpkM2QvZjNEdTUvZXUvK0wvajEzMVJWK2FaWS9ici8rNi81NXZRNGZUMHRXRzIvenM1ek10cHY2cXhZUWhtZUV3OTltMXc1YWpDbkY5S3R5OTN4N2gzS2NjeUxKbTN5OG53Ymt6UXpyRlRBK3pnbnAyZkdGamNyMDlaQVdsU3pOUmxmQUd5MHMwWTZJNFVEcnB5am0wYTZLY21ZbFdOV3R3cDVWVmVYeFN4dmdtWUthR1FoNW1VK2JjbjFhSVNYVDk2Y2lsNG5Yd1FHclNMaHF0djFFbjVKT3g2UFFUVjRYYjk5bkFSb3dmR2pvL3l2dGZ2QWtmNDMvMjArOGtpUHIvL3pYOXNJeE1mZnlTNnoxOU82V0xXUExxdGl0a1ZoMzhkcE1mdnNZOHA1UEt0S3NxeS8vOTQrS2EyOSs3c2ZweXY0c1MremRoNEkwcVl3NUJsOTgwVzJwRENuOW4vM1FwSno3b1JjMjgvWER4OSsvdUJkL3RWcy82ZStmZDdtZTZmWFYvcy9RVG1Ib25tT3JNYnNzemRmZmZXZHZSZjMzbnp4RlNVZTVMMFgyU0wvN043dXhhYy8yZjcwNmNOM1Y1SVZHZmFaUDBvMXFQN3NJMi9rMWtmZmFvbGhSdW1ESGZLbEQrNFRMVWdGY01EOHNZem40NlBIeGVLQzZVTS9lL1NoQ2FNa3pjZUMyc2RwWnZKSW4zMjg0dGRISDZlVUJ2cHNLQVRvNWFUdUNxU1RzbXJ5R1FKQ2dsbTJGaG42bzdoWWZ2WnhObWtXeFl6U1JSK25kNDgwTXdsZHBBTHA1djB2K25YZWE5NHBnZm53MDA5M2ZwYm52Znd1NVdDL2ZMNy9abEVmdjhwL09wOWQvS0xMOXVJMjgzN3dlLytpZDAvdS91UnNkamwvOHVSazlmWW5yL2YyWnV1enZXWnk4ZTZucGovNTltZUxGNXpyOVN3cnk1UXlWL2ZpakdFSitNTmlqQmhtY1M2SnRGU1dNWmtvWVpsZitYNnFRa2E4OTdQTU1tOTJubitlN2QzL3ZHa2YvdUNuZDU5Ky91M3Y1ci8zTDdvVnkveGtrWDJSdmQxOXZTd3VmcS82RjMzNjAxL09tNTk0aThUbXp4S3J2TDR1eTJ5eWJqYnh4OTRQano4c09uR21NRjhySi93NkgySTBaR3ozZjVZNW9mM3BzajcvL0hWMjc5MHZ1bDllNXFlZjdINisvOVh4YlRqaHlYTDIrOVEvOVh0LzhkMVB2dmhabTMzS0w3VHA3cWE1di8vRG0zdEZKajd6OHFYTys2OGJ6UHQvOVg3elRvdHUrL2QzN3Ywc3ovdnJxK1dMODRjWCs4ZUw0MWM3RDE3dU5yOW83eGZ0M0dyZXIzL2lxNTlzZisvbnE2ZS9UL096Tys5N2FYemlMWUYrcUJOUDJHeVkrYjFVcC83WCt4Qi80ZUhCZ3ozaTZwL2xxVDgvWHE5K3IvTjM5NTZ1RHo3NWF2ckptNnQzbjMvbjhsYkszL2tMRjd2VjAzSjZ1ZnJxRi8yaUI4WHEyZTVQdm5wNzluc2YvMnl4ZzdHMXJ5bWZSaUVHVnJyaXJHRUorTU5palJobW0vMEZyNld5eks4ZnNNd2Y5RjRzY3cvNWtBY0huMzdqTEJPeXpPenk3ZlhwMWVuRDVwTVgxVTg4WEx4NStmdjh4T1h0dE1YdXptTDYzWjg0LzhIMVQrM2Z2M2p4M1pOblAvV0RwNU9mK0ZuMEYyNWdFVWV3SHhhTDNNd2FmWmI0RFQ3QWNhQVIzdHY5OU1IUHRnR1pIeC84UG5kLytxcjlmUDc1OGRNZjdQelUrdm9IKzhlM1lvbjFxNS9jL2U3OW43NzNmSHJ3czhZR3JKUVBoamhBNmZQRDRnQkZab1A1T05CNS83RVBDQjN1VVFTeWQvQncvMmQ1M2k5ZS9sVDd2QzN2SCsvZCt6eC8reE52dnYzVHA4dlBiMlU5cm4vd2NuYjhWZlAySldVYTlxN3VyUzVQejM2eXZ2alpVd1hmcG9VM3JKNE1jSUdoMWcrTEN5dzZjVDR3WHlzbkpCK2tBZlozUDMyNGQvQ3p6QW5GbHkvWGQxL2VlelBaLzcxZWYvTDhhVk44OGU3MDJhMDBRUG1MNXIvUHM3TjczLzAyUlJvL1c3UFBjdlZ3WU80TmZYNVljNi9JYk5BQUQzWGVmOE1QY1FaMlA5MjkvL0RnWjFzRExIK3Y0b3R2Nzc2WTdIejM2aGUxN3o0dGx6KzlmdlBWMVczbTNmbVBQLzNKcHcvM203Y3ZwcGMvK0ZsMEJvelBkZnJsU1p3UkxNRitXSXpnWTdUWlQ2UVd5aEsvMFFkRWt6ckNCei9MTFBGcy9tWitmTGsvbjlYVHF4ZXYxNWZ6blJlZjFyY3lDaytMRjhYdWVidHo5NmVybnpVMmVKVmZGdmxWUElYa0NQVERZZ0dEVFh6NjlWdWQrdDg0bVBvLzR1dG9nNTl0Sy9EVHYvZVQ5dDNWbDVQVmR6NWZMQmY3SjUvLzFPcjVpMXRwZytuTHIrcjduMy95WmY1Ny9kVDA3ZHVmM3QxNzh1Q0xoeitMcVVTU3JFVkZDMGUwUE5YRVV3dU9aRDhzWmdoeEd0UUlybzB5eG04U01NYS85OTQ2NGVIREJ6L2JPdUhzOU9YQlQ5VmZmZkhGeStQcnllZWZMODRlL3RURndhMTBRblZ2OWVYcDllcnE3aGMvZTh0UlQxOGNEN0tBRU9lSHhRTEFKRDd4OUkxTzkyOGFUUGVmODk1NjRPSERoei9iOGVDYlQzN3ZzK0wxcTcyM2I2OSs3K3NuNzY0L3FYZnE4bGFyajU4Y1hPdysrK21UNVE5T2Yzci8zdk1YMzM1Ni9OM1ZkNzU2Y1hCeS9QbkJ5NTk0OGRNL1d5endzcTdhdkZoUzBuNUo2OUpOTVd3Z2hIdy9MSWJvNHhWbmoxNDdaWmJmN0VOQ2g5MVA5eDdlMi9uWlhuVllQdjNCNmU3djg2S2FySytMbjV3dG5uMzFZdmtpdTVWdVdMWXZ6cjRvNW0reTJmUm5UVGU4TExObE84Z05TcDhmR2pjSU1nTXN3Ri9xdlAvbXdiei8xZStySkdoY2V6L2JvY1B6RjkrWlAvKzlQbi81RTFjUDgwOE83ci83dmQrY2ZQTDZWczdDcy9udmRUYVovNkw3djljWGk2L3FGMjkvcjRQOHAzL3Zadlg1ZDVlbno4Ni9jL3htLzJlTEZ6N1BsM2xiVEpzMFc4N1NMOVp0MWhiVmNoTnY3UDBRbzRrQjVPSzhFbTlzVnlyQk5UODJGdzVTUHFJZnYrRFhyNVlub051dis2ZjltblhlcnV0bGFvbjIzV0k1cTY2MmhrYlJaWk1uRk5hOGV2MWFPR0pDZjlBVWJlLy93bS8zNW0zdjRYMWEyN3YzQzFmRXZNVzd6NmJUckc2cTVkNzlqMGNmQThiSE5FLzN6VHdoVlNyOC91dnM3aDg4MUJUYXIzT3VILzd1UDVuWERRMHozUnMvK0hTOGUrL2gvWDN5c01zOEl6cW0rM2YzN3Q5RjBwWGVNbEx6Qy8rUnZ6bzlxVmJYZFhFeHAxVWRTaFduMjV5WUhhV25NcmIwK2ZPVDhXejIvd1FBQVAvL0FJKzZ1aUEzQUFBPWTBrVa05aILcGw4SpnEy1BtAzrYZw==" />
+
+<link type='text/css' rel='stylesheet' href='/Style/Global.css'></link>
+        <div id="dvToolTip" style="position: absolute; display: none;" class="LNBTooltip">
+            Tool tip will be displayed here
+        </div>
+        <div style="position: absolute; display: none; left: 0px; top: 0px" id="dvAjaxLoader">
+            <img src="/Images/ajax-loader.gif" alt="Loading...." />
+        </div>
+        <!-- New added Style -->
+        
+        <table cellpadding="0" cellspacing="0" class="containerTbl">
+            <tr>
+                <td>
+                    <div class="bodyContainer">
+                        
+                        <div class="headerContainer">
+                            <div class="headerShape"></div>
+                            <span class="logoContainer">
+                                <a id="ctl00_instHref" target="_blank" title="CYPRESS-FAIRBANKS ISD">
+                                    <img src="http://image.epsilen.com/Handler/InsImageHandler.ashx?userType=cZPZN/8kmIE=&hostID=/9hBT3OGLJo=&tocken=RQ9SkOVJXuuBwvfFlIBo//jeeddOQ+mMdsLNMutwYhgXv0b8vSg4Z1pRNAgaUq9OTBZS9FauR/Ac1o7EKcUxUw==&ext=43MErnAet40=&Refresh=IYgnZKtYTu0=" id="ctl00_imgEpsilenLogo" alt="epsilen.com" vspace="3" width="190" height="90" onerror="logoMissing(this);" />
+                                </a>
+                            </span>
+                            <div id="ctl00_dvWelcomeHeader" class="welcome_linkContainer">
+                                <div class="welcome_linkContainerShape"></div>
+                                <div class="welcome_linkContaint">
+                                    <span id="ctl00_lblUserName" class="welcomeName">CAITLIN CARSON</span>
+                                    <span class="modiDate">
+                                        <span id="ctl00_lblLastModifiedHead">Last Modified:</span>
+                                        <span id="ctl00_lblLastModified" class="modiDateVal">08/20/2014</span>
+                                    </span>
+                                    <span class="publicUrl">
+                                        <a id="ctl00_hlPublicURL" title="Public site URL" href="http://www.epsilen.com/ccarson25">http://www.epsilen.com/ccarson25</a>
+                                        <span id="loadTime"></span>
+                                    </span>
+                                    <div class="accessView" nowrap="nowrap">
+                                        <span id="ctl00_lblViewHead" class="currentViewLbl">Current View:</span>
+                                        <span id="ctl00_lblView" class="currentView">Public</span>
+                                        
+                                        <span id="ctl00_divNavigateToPublic" class="currentView" style="display:none;">
+                                            |
+                                            <span><a id="ctl00_lnkNavigateToPublic" href="javascript:__doPostBack(&#39;ctl00$lnkNavigateToPublic&#39;,&#39;&#39;)" style="text-decoration: underline;"></a></span>
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div id="ctl00_dvAccessKey" class="accessContainer">
+                                <div id="ctl00_dvAccessKeyContents" style="position:absolute">
+                                    <div style="position:absolute;left:-40px;top:5px">
+                                        <img id="ctl00_imgAccessKeyKey" src="Images/accessKey.png" border="0" /> 
+                                    </div>
+                                    <span><span id="ctl00_lblAccessKeyHead" class="accessTxt">Access Key</span></span>
+                                    <br />
+                                    <span><a onclick="return openPopupWindow(&#39;http://www.epsilen.com/Global/CommonHelpPopUp.aspx?title=sGxuD1n419yc8jwQiKHHjA==&#39;,&#39;&#39;,350,600);" id="ctl00_lnkAccessKeys" title="Click to view What is Access Key?" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$lnkAccessKeys&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">What is Access Key?</a></span><br />
+                                    <span><input name="ctl00$txtAccessKey" type="password" id="ctl00_txtAccessKey" class="accessInput" onKeyPress="JavaScript:onAccessKeyPress(event);" /></span>
+                                    <span><a onclick="return ValidateAccessKey();" id="ctl00_btnGoNew" title="Click to Submit Access Key" class="accessGoLink" AlternateText="Submit Access Key" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$btnGoNew&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a></span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                        <div class="containtContainer">
+                            
+                            <div class="LNB lnbBg" id="lnb_Menu">
+                                <a ToolTip="View ePortfolio of this member" onmouseover="ShowPublicTooltip(this)" onmouseout="HidePublicTooltip();"  runat="server" href="http://www.epsilen.com/MyPortal/Public/../Public/Home.aspx?prefix=ccarson25&ToolID=238&systemName=PerPublic_Home" id="hrefPerPublic_Home"><img src="/Images/Icons/InstAdminIcons/icon_lnbHome.gif" alt="" align="left" onerror="JavaScript:showDefaultIcon(this);" runat="server"/> Home</a>
+
+<a ToolTip="View <b>ShareIt</b> objects of this member" onmouseover="ShowPublicTooltip(this)" onmouseout="HidePublicTooltip();"  runat="server" href="http://www.epsilen.com/MyPortal/Public/../Public/ShareIt.aspx?prefix=ccarson25&ToolID=239&systemName=PerPublic_ShareitViewFiles" id="hrefPerPublic_ShareitViewFiles"><img src="/Images/Icons/icon_shareIt.gif" alt="" align="left" onerror="JavaScript:showDefaultIcon(this);" runat="server"/> ShareIt</a>
+
+<a ToolTip="View <b>News</b> posted by this member" onmouseover="ShowPublicTooltip(this)" onmouseout="HidePublicTooltip();"  runat="server" href="http://www.epsilen.com/MyPortal/Public/../Public/News.aspx?prefix=ccarson25&ToolID=236&systemName=PerPublic_News" id="hrefPerPublic_News"><img src="/Images/Icons/InstAdminIcons/icon_lnbNews.gif" alt="" align="left" onerror="JavaScript:showDefaultIcon(this);" runat="server"/> News</a>
+
+<a ToolTip="View <b>Publications</b> posted by this member" onmouseover="ShowPublicTooltip(this)" onmouseout="HidePublicTooltip();"  runat="server" href="http://www.epsilen.com/MyPortal/Public/../Public/Publication.aspx?prefix=ccarson25&ToolID=240&systemName=PerPublic_Publications" id="hrefPerPublic_Publications"><img src="/Images/Icons/icon_publication.gif" alt="" align="left" onerror="JavaScript:showDefaultIcon(this);" runat="server"/> Publications</a>
+
+<a ToolTip="Tutorials" onmouseover="ShowPublicTooltip(this)" onmouseout="HidePublicTooltip();" runat="server" href="http://www.epsilen.com/MyPortal/Public/CustomTab.aspx?tabID=54577&prefix=ccarson25&systemName=Tutorials" id="hrefTutorials"><img src="/EpsilenClient//Images/Icons/CustomMenuIcons/icon_MenuEdit.gif" alt="" align="left" onerror="JavaScript:showDefaultIcon(this);" runat="server"/> Tutorials</a>
+
+
+                                <a href="http://www.epsilen.com/Security/Login.aspx" id="ctl00_hrefLogin"><img src="/Images/Icons/MyPortalPublicIcons/icon_lnbLogin.gif" alt="Click to login" title="Click to Login" align="absmiddle" />Login</a>
+                            </div>
+                            
+                            <div class="contentArea">
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                        <td valign="top" style="width: 98%; padding-right: 10px; height: 414px;" id="dvContainer">
+                                            <div id="dvPersonalPublicContentArea" style="overflow:auto;overflow-y:hidden;">
+                                                
+    
+    <script language="javascript" type="text/javascript">
+        var baseURL = 'http://www.epsilen.com';
+        function onImageMissing(obj)
+        {
+            var rootPath = baseURL + '/images/noMembersBig.jpg';
+            obj.src=rootPath; 
+        }
+        function openAlbumViewer(contrl)
+        {
+            var urlForAlbumViewer = contrl.getAttribute("URLForAlbumViewer");
+            return openPopupWindow(urlForAlbumViewer,'AlbumViewer',650, 650, '');
+        }
+    </script>
+
+    <script language="javascript" type="text/javascript">        
+        var currentFadePercentage = 100;
+        var currentPictureIndex = 0;
+        function setOpacity(obj, opacity) 
+        {
+            opacity = (opacity == 100)?99.999:opacity;
+            // IE/Win
+            obj.style.filter = "alpha(opacity:"+opacity+")";
+
+            // Safari<1.2, Konqueror
+            obj.style.KHTMLOpacity = opacity/100;
+
+            // Older Mozilla and Firefox
+            obj.style.MozOpacity = opacity/100;
+
+            // Safari 1.2, newer Firefox and Mozilla, CSS3
+            obj.style.opacity = opacity/100;
+        }    
+
+        function FadeInImage()
+        {
+            var objFadeImage =document.getElementById('ctl00_cphMain_imgUserPic');
+            if(currentFadePercentage<100)
+            {
+                currentFadePercentage+=10;
+                setOpacity(objFadeImage, currentFadePercentage);
+                setTimeout('FadeInImage()', 1);
+            }
+            else
+            {
+                var fadingElement = document.getElementById('ctl00_cphMain_lblPictureCounting').getElementsByTagName('a');
+                for(var i=0;i<fadingElement.length;i++)
+                {
+                    fadingElement[i].setAttribute('clickEnable', 1);
+                }                                            
+                
+                if(document.getElementById('ctl00_cphMain_dvNextPrev'))
+                {
+                    var dvNextPrevElement = document.getElementById('ctl00_cphMain_dvNextPrev').getElementsByTagName('a');
+                    for(var j=0;j<dvNextPrevElement.length;j++)
+                    {
+                        dvNextPrevElement[j].setAttribute('clickEnable', 1);
+                    }           
+                }
+            }
+        }
+
+
+        function FadeOutImage(imageSrc)
+        {
+            var objFadeImage =document.getElementById('ctl00_cphMain_imgUserPic');
+            if(currentFadePercentage>0)
+            {
+                currentFadePercentage = currentFadePercentage - 10;
+                setOpacity(objFadeImage, currentFadePercentage);                
+                setTimeout('FadeOutImage("'+ imageSrc +'")' , 1);
+            }
+            else
+            {
+                setTimeout('ChangeImage("' + imageSrc + '")', 100);
+            }
+            return false;
+        }
+    
+    
+        function generateRSS()
+        {
+            var objEpsilenNewsRSSPopup = openPopupWindowwithObject('http://www.epsilen.com/Myportal/public/NewsFeedRss.aspx?RequestType=latest&prefix=ccarson25','News_Feed', 600, 600, 'scrollbars=yes,resizable=yes');
+        }        
+        
+        function OpenWindow(URL)
+        {
+            return openPopupWindow(URL,'ViewVedio', 600, 800, 'scrollbars=yes,resizable=yes');
+        }
+        
+        function ValidateForm()
+        {
+            var errorMsg="";
+            var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+            if(document.getElementById('ctl00_cphMain_txtName').value=="")
+            errorMsg+=' -Your name is required.' + "\n";
+            if(document.getElementById('ctl00_cphMain_txtMessage').value=="")
+            errorMsg+= '- Message is required.' + "\n";
+             if(document.getElementById('ctl00_cphMain_txtEmail').value=="")
+            errorMsg+='- Email is required' +"\n";
+             if((reg.test(document.getElementById('ctl00_cphMain_txtEmail').value) == false)&&(document.getElementById('ctl00_cphMain_txtEmail').value.length>0))
+             errorMsg+='- Email is not valid';
+            if(errorMsg!="")
+            {
+                alert(errorMsg);
+                return false;
+            }
+            else
+            {
+                 __doPostBack('ctl00$cphMain$btnSend','');
+                return true;
+            }
+        }
+        
+        function ChangeImage(imageSrc)
+        {
+            var imgUserPic = document.getElementById('ctl00_cphMain_imgUserPic');
+            imgUserPic.src = imageSrc;
+            imgUserPic.style.visibility = 'hidden';
+            setOpacity(imgUserPic, 0)
+            imgUserPic.style.visibility = 'visible';            
+            setTimeout('FadeInImage()' , 1);            
+            return false;
+        }
+                
+        function fadeImageOut(imageSrc, objClicked)
+        {            
+            if(objClicked.getAttribute('clickEnable')=='1')
+            {
+                var fadingElement = document.getElementById('ctl00_cphMain_lblPictureCounting').getElementsByTagName('a');
+                for(var i=0;i<fadingElement.length;i++)
+                {
+                    fadingElement[i].setAttribute('clickEnable', 0);
+                }                
+                
+                if(document.getElementById('ctl00_cphMain_dvNextPrev'))
+                {
+                    var dvNextPrevElement = document.getElementById('ctl00_cphMain_dvNextPrev').getElementsByTagName('a');
+                    for(var i=0;i<dvNextPrevElement.length;i++)
+                    {
+                        dvNextPrevElement[i].setAttribute('clickEnable', 0);
+                    }
+                }           
+                           
+                currentFadePercentage=100;
+                FadeOutImage(imageSrc);
+                if(objClicked.getAttribute("pictureindex") != null)
+                    currentPictureIndex = parseInt(objClicked.getAttribute("pictureindex"));
+                return false;
+            }
+            else
+            {
+                alert('Please wait for the image to display');            
+            }
+        }        
+        
+        function imageProcessPrev(imgCntrol)
+        {   
+            if(imgCntrol.getAttribute("clickEnable")== '0')
+            {
+                alert('Please wait for the image to display');            
+            }         
+            if(currentPictureIndex > 0 && imgCntrol.getAttribute("clickEnable")== '1')
+            {
+                var imgSRC = imgCntrol.getAttribute("CSVImageSRC").split(',');                        
+                currentPictureIndex -= 1;            
+                fadeImageOut(imgSRC[currentPictureIndex], imgCntrol)
+            }
+            else
+            {
+                alert('You are viewing the first image')
+            }            
+        }
+        
+        function imageProcessNext(imgCntrol)
+        {
+            if(imgCntrol.getAttribute("clickEnable")== '0')
+            {
+                alert('Please wait for the image to display');            
+            }
+            var imgSRC = imgCntrol.getAttribute("CSVImageSRC").split(',');            
+            if(currentPictureIndex < imgSRC.length - 1 && imgCntrol.getAttribute("clickEnable")== '1')
+            {                
+                currentPictureIndex += 1;               
+                fadeImageOut(imgSRC[currentPictureIndex], imgCntrol)                
+            }
+            else
+                alert('You are viewing the last image')
+        }      
+   
+    </script>
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td class="contentBgLeft">&nbsp;</td>
+            <td class="contentBg">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td style="width: 120px" class="txtBlue txt11" valign="top">
+                            <div style="text-align: left; padding-top: 3px">
+                                <img src="Images/noMembersBig.jpg" id="ctl00_cphMain_imgUserPic" onerror="JavaScript:onImageMissing(this)" style="cursor: pointer;" onclick="return openAlbumViewer(this);" class="imgBorder" alt="User&#39;s picture, Click to view User&#39;s Album" title="User&#39;s picture, Click to view User&#39;s Album" URLForAlbumViewer="http://www.epsilen.com/MyPortal/Public/AlbumViewerPopup.aspx?hostUserAccountID=Tn5d1EBc5Eo=" />
+                            </div>
+                            <div>
+                                
+                                
+                            </div>
+                            
+                        </td>
+                        <td valign="top" class="lineHeight20">
+                            <span><span id="ctl00_cphMain_lblName" class="txtBlue txt17 lbl">CAITLIN CARSON</span></span>&nbsp;
+                            
+                            <span><span id="ctl00_cphMain_lblPrimaryTitle" class="txtBlue lbl"></span></span>
+                            <span><span id="ctl00_cphMain_lblSecondaryTitle" class="txtBlue lbl"></span></span>
+                            <br />
+                            <div id="ctl00_cphMain_divPrimaryEmail">
+                                <span><span id="ctl00_cphMain_lblEmailPrimary" class="lbl">Primary Email:</span></span>
+                                <a href="mailto:caitlin.carson@cfisd.net" id="ctl00_cphMain_lnkPrimaryEmail" style="display: ;">caitlin.carson@cfisd.net</a>
+                                <img src="Images/Icons/icon_lock.gif" id="ctl00_cphMain_imgPrimaryEmailLock" title="Primary email is locked" alt="Primary email is locked" style="display:none;" /><br />
+                           </div>
+                           
+                           <div id="ctl00_cphMain_divMajorMinor" style="display:none">
+                            <div id="ctl00_cphMain_divMajor" style="display:none;">
+                            <span><span id="ctl00_cphMain_lblMajorDegree" class="lbl">Major Degree:</span></span>
+                            <span><span id="ctl00_cphMain_lblMajorDegreeValue" style="display:none"></span></span>
+                            <br />
+                            </div>
+                            <div id="ctl00_cphMain_divMinor" style="display:none;">
+                            <span><span id="ctl00_cphMain_lblMinorDegree" class="lbl">Minor Degree:</span></span>
+                            <span><span id="ctl00_cphMain_lblMinorDegreeValue" style="display:none"></span></span>
+                            <br />
+                            </div>
+                           </div>
+                            <table id="ctl00_cphMain_tblPhoneDetails" width="100%" border="0" cellspacing="0" cellpadding="1" summary="Table contains controls to display Home and Office address">
+	<tr>
+		<td>
+                                        <span id="ctl00_cphMain_divHome" style="margin-right:10px;display:none;">
+                                            <span><span id="ctl00_cphMain_lblHome" class="lbl">Home Phone:</span></span>
+                                             <span><span id="ctl00_cphMain_lblHomePhoneValue" style="display: none;"></span></span>
+                                             <img src="Images/Icons/icon_lock.gif" id="ctl00_cphMain_imgHomePhoneLock" align="absMiddle" title="Home phone number is locked" alt="Home phone number is locked" />
+                                        </span>
+                                        <span id="ctl00_cphMain_divCell" style="display:none;">
+                                           <span><span id="ctl00_cphMain_lblCell" class="lbl">Cell Phone:</span></span>
+                                             <span><span id="ctl00_cphMain_lblCellValue" style="display: none;"></span></span>
+                                        <img src="Images/Icons/icon_lock.gif" id="ctl00_cphMain_imgCellPhoneLock" align="absMiddle" title="Cell phone number is locked" alt="Cell phone number is locked" />
+                                        </span>
+                                    </td>
+	</tr>
+	<tr>
+		<td>
+                                        <span id="ctl00_cphMain_divOffice" style="margin-right:10px;">
+                                              <span><span id="ctl00_cphMain_lblOffice" class="lbl">Office Phone:</span></span>
+                                              <span><span id="ctl00_cphMain_lblOfficePhoneValue" style="display: none;"></span></span>
+                                              <img src="Images/Icons/icon_lock.gif" id="ctl00_cphMain_imgOfficeLock" align="absMiddle" alt="Office phone number is locked" title="Office phone number is locked" />
+                                        </span>
+                                        <span id="ctl00_cphMain_divFax" style="display:none;">
+                                             <span><span id="ctl00_cphMain_lblFax" class="lbl">Fax Number:</span></span>
+                                             <span><span id="ctl00_cphMain_lblFaxValue" style="display: none;"></span></span>
+                                             <img src="Images/Icons/icon_lock.gif" id="ctl00_cphMain_imgFaxLock" align="absMiddle" title="Fax number is locked" alt="Fax number is locked" />
+                                        </span>
+                                    </td>
+	</tr>
+</table>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <a href="javascript:void(0)" id="ctl00_cphMain_hrefLogin" title="View Profile (Requires Login)" onclick="return openPopupWindow(&#39;http://www.epsilen.com/Security/Login.aspx?HostUserAccountID=Tn5d1EBc5Eo=&#39;, &#39;Profile&#39;, 650, 980)">
+                                <img id="ctl00_cphMain_imgViewEportfolio" title="View Profile (Requires Login)" src="Images/ViewEportfolio.gif" alt="view ePortfolio" border="0" />
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td class="contentBgRight">&nbsp;</td>
+        </tr>
+    </table>
+    <br />
+    <table id="ctl00_cphMain_tblWelcomeNote" width="100%" border="0" cellspacing="0" cellpadding="0" summary="Table layout for welcome notes" style="display:;">
+	<tr>
+		<td class="contentBgLeft">
+                &nbsp;</td>
+		<td class="contentBg">
+                <div id="ctl00_cphMain_divWelcomeNotes" class="whiteBG" style="margin-top: 5px;">
+                    <div>
+			
+                            <table width="100%">
+                        
+                        <tr>
+                            <td>
+                            <span><span id="ctl00_cphMain_drpWelcomeNotes_ctl01_lblTitle" class="txtBlue lbl">Welcome Wildcats!</span></span>
+                            </td>    
+                        </tr>
+                         <tr>
+                            <td>
+                            <div style="width:530px; word-wrap: break-word;">
+                                   <div><strong><span style="color: #000000; font-size: 10pt;">As a graduate of </span><span style="color: #cc6633; font-size: 10pt;">The&nbsp;</span><span style="color: #cc6633; font-size: 10pt;">University of Texas at Austin</span><span style="color: #000000; font-size: 10pt;">, I earned my BS in Health Promotion from the College of Education. While at UT, &nbsp;</span><span style="color: #000000; font-size: 10pt;">I had the </span><span style="color: #000000; font-size: 10pt;">privilege of </span><span style="color: #000000; font-size: 10pt;">working in the Prevention Research Lab </span><span style="color: #000000; font-size: 10pt;">as an undergraduate research assistant, focusing on the influence of media advertising on youth risk behaviors.</span></strong></div><div><strong>&nbsp;</strong></div><div><span style="color: #000000; font-size: 10pt;"><strong>Currently, I am teaching Biology I H/K and L here at The Woods.&nbsp;</strong></span></div><div><strong>&nbsp;</strong></div><div><strong></strong>&nbsp;</div><div><strong><font class="Apple-style-span" color="#990000"><span style="color: #000000; font-size: 10pt;">Here's to a great year! &nbsp; &nbsp;</span></font><span style="color: #cc6633; font-size: 10pt;">Hook 'Em </span><span style="color: #000000; font-size: 10pt;">&amp; </span><span style="color: #990000; font-size: 10pt;">GO WILDCATS!</span></strong></div><div><strong>&nbsp;</strong></div><div><strong>&nbsp;</strong></div><div><strong>My tutorials are Wednesday and Thursday from 2:40-3:10 or by appointment. </strong></div><div><strong>&nbsp;</strong></div><div><strong>For regular updates, the biology course calendar, and other class material, please refer to: &nbsp; <a href="http://www.cypresswoodsbiology.wikispaces.com" target="_blank">www.cdubbiology.wikispaces.com</a></strong></div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>      
+                            </div>
+                            </td>
+                         </tr>   
+                            
+                        
+                            </table>
+                        <table class=" PagerBottom" cellspacing="0" cellpadding="0" border="0" width="100%">
+				<tr>
+
+				</tr>
+			</table>
+		</div>
+                    <span><span id="ctl00_cphMain_lblNoWelcomeNote" class="info" style="display: none;">There are no welcome notes to display.</span></span>
+                </div>
+            </td>
+		<td class="contentBgRight">
+                &nbsp;</td>
+	</tr>
+</table>
+
+    <br />
+    <table id="ctl00_cphMain_tblNews" width="100%" border="0" cellspacing="0" cellpadding="0" summary="Table layout for News" style="display:none;">
+	<tr>
+		<td class="contentBgLeft">
+                &nbsp;</td>
+		<td class="contentBg">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="headMain">
+                            <img src="/Images/Icons/icon_news.gif"  alt="News" align="absmiddle" />
+                            <span><span id="ctl00_cphMain_lblNewsCaption"> News</span></span>
+                            <a href="javascript:void(0);" id="ctl00_cphMain_A1">
+                                <img src="Images/Icons/icon_rssFead.gif" id="ctl00_cphMain_imgRss" align="absmiddle" onclick="generateRSS();return false;" title="Generate Latest News RSS Feed" alt="Generate Latest News RSS Feed" /></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            
+                            <span><span id="ctl00_cphMain_lblNoNews" class="info" style="display: ;">There are no news to display.</span></span>
+                        </td>
+                    </tr>
+                </table>
+                <br />
+            </td>
+		<td class="contentBgRight">&nbsp;</td>
+	</tr>
+</table>
+
+    <br />
+     
+    
+    <table id="ctl00_cphMain_tblQuickNote" width="100%" border="0" cellspacing="0" cellpadding="0" style="display:;">
+	<tr>
+		<td class="contentBgLeft">&nbsp;</td>
+		<td class="contentBg">                
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="Main table layout for QuickNote">
+                    <tr>
+                        <td colspan="2" class="headMain">
+                            <img src='http://www.epsilen.com/Images/Icons/icon_quickNote.gif' alt="Quicknote image" align="absmiddle" />
+                            <span><span id="ctl00_cphMain_lblQuickNote">QuickNote</span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="lbl">
+                            <span><span id="ctl00_cphMain_lblInstruction">Use the form below to send a message to me. </span></span>
+                        </td>
+                    </tr>
+                    <tr id="ctl00_cphMain_trQuickNoteSent" style="display:none;">
+			<td colspan="2">
+                            <span><span id="ctl00_cphMain_lblQuickNoteSent" class="successMsg" style="margin-top:5px;">QuickNote sent successfully.</span></span>
+                        </td>
+		</tr>
+		
+                    <tr>
+                        <td valign="top">                            
+                            <table width="100%" border=0>
+                                <tr>
+                                    <td>
+                                        <span><span id="ctl00_cphMain_lblQuickName">Your Name: </span></span>
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                                                                                                    
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span><input name="ctl00$cphMain$txtName" type="text" maxlength="100" id="ctl00_cphMain_txtName" class="inputBox" /></span>
+                                    </td>
+                                    <td align="left">
+                                          <span class="required">*</span>
+                                    </td>
+                                    <td rowspan="3">
+                                        <span><textarea name="ctl00$cphMain$txtMessage" rows="2" cols="20" id="ctl00_cphMain_txtMessage" class="inputBox">
+</textarea></span>
+                                    </td>
+                                    <td align="left">
+                                        <span class="required">*</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span><span id="ctl00_cphMain_lblEmail">Your Email: </span></span>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span><input name="ctl00$cphMain$txtEmail" type="text" maxlength="100" id="ctl00_cphMain_txtEmail" class="inputBox" /></span>
+                                    </td>
+                                    <td align="left">
+                                        <span class="required">*</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br />
+                            <script type="text/javascript">
+				var RecaptchaOptions = {
+					theme : 'clean',
+					custom_translations : {
+					instructions_visual : 'Type the two words:',
+					instructions_audio : 'Write down what you hear:',
+					play_again : 'Replay the audio track',
+					cant_hear_this : 'Download the track in MP3 format',
+					visual_challenge : 'Visual mode',
+					audio_challenge : 'Auditory modality',
+					refresh_btn : 'Get two new words',
+					help_btn : 'Help',
+					incorrect_try_again : 'Incorrect. Retry.',
+					},
+					tabindex : 0
+				};
+
+		</script><script type="text/javascript" src="https://www.google.com/recaptcha/api/challenge?k=6LdCTfASAAAAAA5neYrWWB4_rawiQ_GsFt-U-W4t">
+
+		</script><noscript>
+				<iframe src="https://www.google.com/recaptcha/api/noscript?k=6LdCTfASAAAAAA5neYrWWB4_rawiQ_GsFt-U-W4t" width="500" height="300" frameborder="0">
+
+				</iframe><br /><textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea><input name="recaptcha_response_field" value="manual_challenge" type="hidden" />
+		</noscript>
+                             <br />
+                        </td>
+                    </tr>                    
+                    <tr>
+                        <td>
+                        <input name="ctl00$cphMain$hdnException" type="hidden" id="ctl00_cphMain_hdnException" />
+                            
+                            <input onclick="return ValidateForm(); if (typeof(Page_ClientValidate) == 'function') Page_ClientValidate(''); __doPostBack('ctl00$cphMain$btnSend','')" name="ctl00$cphMain$btnSend" type="button" id="ctl00_cphMain_btnSend" class="Button" style="width: 75px" accesskey="S" value="Send" />
+                        </td>
+                    </tr>
+                </table>
+                <br />
+            </td>
+		<td class="contentBgRight">
+                &nbsp;</td>
+	</tr>
+</table>
+
+
+    <script type="text/javascript">
+        ShowPublicMenuItemSelected('hrefPerPublic_Home') ;
+    </script>
+
+                                            </div>
+                                        </td>
+                                        <td valign="top">
+                                            <div id="ctl00_sideBar">
+                                                <table cellpadding="0" cellspacing="0">
+                                                    <tr>
+                                                        <td valign="top">
+                                                            <span id="sideBarTab" class="quickLinkTab" onclick="quickLinkClick();">
+                                                                <img id="imgInOut" src="/Style/PublicTheme1/Images/quicklink_button.jpg" alt="QuickLink" style="display: none" title="QuickLink"  />
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <div id="sideBarContents" style="width: 0px; display: none;">
+                                                                <div id="sideBarContentsInner" style="overflow: auto; height: 620px">
+                                                                    <div class="LNB" id="lnb_container">
+                                                                        <div class="arrowlistmenu" id="masterList">
+                                                                            
+                                                                            
+                                                                            <div id="ctl00_pnlCourseQuickLinks">
+	
+                                                                                <h3 class="h3">
+                                                                                    <a href="javascript:void(0)" title="Course QuickLinks" onclick="toggleChannels('divCourse');">Course (<span><span id="ctl00_lblCourseCount">1</span></span>)</a>
+                                                                                </h3>
+                                                                                <div id="divCourse" style="display: none">
+                                                                                    <span>
+                                                                                            <ul class="subMenu" id="ulCourseQuickLinks">
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptCourseQuickLinks_ctl01_hlQuickLink" title="TEA Science Safety Training for High School (v1.1), This self-paced course is a foundational training module for science safety at the high school level. The course provides high school science, science electives, and CTE teachers an opportunity t..." href="http://www.epsilen.com/crs/14285635" target="_blank">&nbsp;<img id="ctl00_rptCourseQuickLinks_ctl01_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;TEA Science Safety Tra...</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            </ul>
+                                                                                        </span>
+                                                                                </div>
+                                                                            
+</div>
+                                                                            <div id="ctl00_pnlSharedObjects">
+	
+                                                                                <h3 class="h3">
+                                                                                    <a href="javascript:void(0)" title="Shared Objects" onclick="toggleChannels('divShareObjects');">Shared Objects (<span><span id="ctl00_lblSharedObjectsCount">17</span></span>)</a>
+                                                                                </h3>
+                                                                                <div id="divShareObjects" style="display: none">
+                                                                                    <span>
+                                                                                            <ul class="subMenu" id="shareObjectList">
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl01_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_24000251' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=Gu99G7xeUd4ZHfte2Eyw4Q==&isLocked=TUUJ2N3TMU0=&folderName=31g6VtjE9xw=&hostUserAccountID=Tn5d1EBc5Eo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Public'><img id='imgFolder_24000251' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Public' align='absmiddle' /> Public</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl02_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_25809660' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=lWsteOL4TmrARejedgqvtg==&isLocked=TUUJ2N3TMU0=&folderName=8XqxB/VddvhBBCpkVy22duI2sbgxZcVk&hostUserAccountID=Tn5d1EBc5Eo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Biology I Fall 2013'><img id='imgFolder_25809660' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Biology I Fall 2013' align='absmiddle' /> Biology I Fall 2013</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl03_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_25809662' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=T0LGa25Gst9zj1DGHWeXqg==&isLocked=TUUJ2N3TMU0=&folderName=ViaMak1SnigKrq6jOhsQkw==&hostUserAccountID=Tn5d1EBc5Eo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Syllabus'><img id='imgFolder_25809662' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Syllabus' align='absmiddle' /> Syllabus</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl04_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_25809665' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=tjlrfGSa3xq5lveE+1G4UA==&isLocked=TUUJ2N3TMU0=&folderName=BndYrZXMW+M=&hostUserAccountID=Tn5d1EBc5Eo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Unit 1'><img id='imgFolder_25809665' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Unit 1' align='absmiddle' /> Unit 1</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl05_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_26794503' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=SwnNf9g4AmAR07P1sq2q0A==&isLocked=TUUJ2N3TMU0=&folderName=yQUVtXLpDYs=&hostUserAccountID=Tn5d1EBc5Eo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Unit 2 '><img id='imgFolder_26794503' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Unit 2 ' align='absmiddle' /> Unit 2 </a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl06_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_29872809' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=fAupKfx3Du8+Uc+TwxGJvg==&isLocked=TUUJ2N3TMU0=&folderName=8XqxB/Vddvg1oDlcvpUqq7ipF1VRkIXA&hostUserAccountID=Tn5d1EBc5Eo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Biology Spring 2014'><img id='imgFolder_29872809' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Biology Spring 2014' align='absmiddle' /> Biology Spring 2014</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl07_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_30000786' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=dvkyEwE9s+NoQ9mTPYQv0A==&isLocked=TUUJ2N3TMU0=&folderName=10mcWQfzyZ45gNWCFZzDbQ==&hostUserAccountID=Tn5d1EBc5Eo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Spring 2014'><img id='imgFolder_30000786' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Spring 2014' align='absmiddle' /> Spring 2014</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl08_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_30031673' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=hA8Y/jwtGhGADz0Zuyz4AA==&isLocked=TUUJ2N3TMU0=&folderName=uRV1W5j3Lc8=&hostUserAccountID=Tn5d1EBc5Eo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Unit 8'><img id='imgFolder_30031673' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Unit 8' align='absmiddle' /> Unit 8</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl09_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_30132894' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=gPZtLtl5A23GekQTHjEnGg==&isLocked=TUUJ2N3TMU0=&folderName=yzPdAUskPtjE2w3pvEIVrg==&hostUserAccountID=Tn5d1EBc5Eo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Homework'><img id='imgFolder_30132894' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Homework' align='absmiddle' /> Homework</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl10_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_30416928' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=iOPu/P3Tb4KS+LDsiMxEFA==&isLocked=TUUJ2N3TMU0=&folderName=lqhYFI3WHUA=&hostUserAccountID=Tn5d1EBc5Eo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Unit 9'><img id='imgFolder_30416928' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Unit 9' align='absmiddle' /> Unit 9</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl11_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_31615984' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=nKiMH1Nb0Wwqtx6lnjuTUw==&isLocked=TUUJ2N3TMU0=&folderName=8XqxB/Vddvj+694skNcvzQ==&hostUserAccountID=Tn5d1EBc5Eo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Biology EOC'><img id='imgFolder_31615984' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Biology EOC' align='absmiddle' /> Biology EOC</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl12_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_31615987' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=FhThAv4hdrcwNSuvh0N6rg==&isLocked=TUUJ2N3TMU0=&folderName=DiNi1ft0/jo=&hostUserAccountID=Tn5d1EBc5Eo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Reviews'><img id='imgFolder_31615987' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Reviews' align='absmiddle' /> Reviews</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl13_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_31615988' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=jXBtxwObpJGmnm4CGZpLNw==&isLocked=TUUJ2N3TMU0=&folderName=cPUr5G+OeKZckkj12B7M9w==&hostUserAccountID=Tn5d1EBc5Eo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Biomolecules '><img id='imgFolder_31615988' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Biomolecules ' align='absmiddle' /> Biomolecules </a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl14_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_31619977' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=IEP8ZrUMMPAybGGmI9Zg8g==&isLocked=TUUJ2N3TMU0=&folderName=o3pOEypw/Mw=&hostUserAccountID=Tn5d1EBc5Eo=" onclick="JavaScript:openPopup(this, 700, 850);" title='DNA'><img id='imgFolder_31619977' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='DNA' align='absmiddle' /> DNA</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl15_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_31619993' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=T+XIiSR2kkwXyBxy+r0rlQ==&isLocked=TUUJ2N3TMU0=&folderName=+8g1FjCnzEj43LNHDAWpJUN8CAG8PQNj&hostUserAccountID=Tn5d1EBc5Eo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Protein Synthesis'><img id='imgFolder_31619993' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Protein Synthesis' align='absmiddle' /> Protein Synthesis</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl16_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_31629305' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=nDzE1YNobuyiVdmFUNnNag==&isLocked=TUUJ2N3TMU0=&folderName=ntNIMihTadc=&hostUserAccountID=Tn5d1EBc5Eo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Plants'><img id='imgFolder_31629305' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Plants' align='absmiddle' /> Plants</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl17_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_31629324' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=LNJhLKGPQw9e+85xXTC+Sw==&isLocked=TUUJ2N3TMU0=&folderName=FhKIbhq5KMmUrNkK8ejXspGWnEFfJAT4&hostUserAccountID=Tn5d1EBc5Eo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Genetics and Mutations'><img id='imgFolder_31629324' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Genetics and Mutations' align='absmiddle' /> Genetics and Mutations</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            </ul>
+                                                                                        </span>
+                                                                                </div>
+                                                                            
+</div>
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div style="height: 100%"></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="height: 100%"></tr>
+                                                </table>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" style="height:20px;" align="right">
+                                            <span><span id="ctl00_lblVisitorCountHead" class="txt12">Visitors: </span></span><span><span id="ctl00_lblVisitorCount" class="txt12">1489</span></span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="footerContainer">
+                            
+
+<div class="footerLogo">
+</div>
+<div class="footerLiks">
+        <a title="Click to disply privacy policy" href="http://www.connectedu.com/DMCA" target="_blank">Copyright Policy</a> | 
+        <a title="Click to open Terms of Service" href="javascript:void(0);" onclick="openPopupWindowwithObject('http://www.epsilen.com/Global/FindoutMore.aspx?RequestType=R8mIpxQP9oDaaAwKSU/RBA==&SettingKey=rj3PlJHt3W2nlasd0jqmRw==', 'TermsOfService', 500, 600, 'scrollbars=yes,resizable=yes');">Terms of Service</a> | 
+        <a title="Click to open Privacy Statement" href="JavaScript:void(0);" onclick="openPopupWindowwithObject('http://www.epsilen.com/Global/FindoutMore.aspx?RequestType=R8mIpxQP9oDaaAwKSU/RBA==&SettingKey=wmE+Tl6LGSg=', 'Privacy', 500, 600, 'scrollbars=yes,resizable=yes');">Privacy Statement</a>, 
+        <span><span id="ctl00_PublicFooterUC1_lblVersion">Version 2.76.13954 Released 4/25/2014</span></span>
+        <span><span id="ctl00_PublicFooterUC1_lblCopyright" class="footerCopyright">?? Copyright 2007 - 2014, Epsilen LLC.</span></span>
+  
+</div>
+
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <!-- New added Style -->
+        
+    
+<script language="javascript" type="text/javascript">	function __doSort_drpWelcomeNotes(obj) {		var element = document.forms[0]['__SORTBY_drpWelcomeNotes'];		if (element) {			element.value = obj.getAttribute('SortCommand');			__doPostBack('drpWelcomeNotes', '');		} 	}	</script><script language="javascript" type="text/javascript">	function __doPaginateLink_drpWelcomeNotes(page) { 		var element = document.forms[0]['__NEXTPAGE_drpWelcomeNotes'];		if (element) {			element.value = page;			__doPostBack('drpWelcomeNotes', '');		}	}	</script></form>
+    
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23292102-1']);
+  _gaq.push(['_setCustomVar', 1, 'huaID', 'null', 3]);
+  _gaq.push(['_setCustomVar', 2, 'courseID', 'null', 3]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
+

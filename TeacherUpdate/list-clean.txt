@@ -1,0 +1,282 @@
+DEP
+English
+English I
+Underwood, Traci
+Phillips, Mitzi
+Ishmael, Brittany
+Leonard, Stacy
+Chumley, Doug
+Streb, Jonathan
+
+English II
+Hill, Rochelle
+Beckford, Sophronia
+Hill, Nancy
+Toliver, Amy
+Getman, Nancy
+English, Debbie
+
+English III
+Tannous, Candy
+Fleming-Jones, Karla
+Lancaster, Kimberly
+Hall, Lorrie
+King, Tina
+Decman, Jordan
+
+English IV
+Schlarmann, Elizabeth
+Nelson, Laurie
+Flores, Virginia
+Bell, Beverly
+Sempe, Jennifer
+Watkins, Alana
+
+PACE/Reading/PLATO
+England, Stephanie
+Comeaux, Michele
+Grigsby, Courtnie
+Dodd, Jill
+Martin, Heath
+Self, Nikki
+
+END
+DEP
+Social Studies
+World Geography
+Nichols, Justin
+Kent, John
+Kolkhorst, Todd
+Sandefur, Rusty
+Turnbow, Chris
+Elizarde, Jesse
+Bricarell, Brandon
+
+World History
+Onhaizer, Kelly
+Gillihan, Amanda
+Jones, Sarah
+Schlarmann, Eric
+Abercrombie, Kathleen
+Lokey, Katrese
+
+US History
+Villamagna, George
+Wilson, Mike
+Wittschen, Kevin
+Loria, Thomas
+Rogers, Diana
+Self, Craig
+
+Government/Economics
+Stephanow, Leah
+Collins, Lynda
+Porter, Jason
+Tate, Emily
+Schroller, Wesley
+White, Mike
+Vance, James
+
+END
+DEP
+Math
+Algebra I
+Carter, Catherine
+Laskowski, Eugenia
+Rosenbaum, Lindsey
+
+Geometry
+Hannah, Stacy
+Weeks, Jennifer
+Jenkins, Courtney
+Prieto, Kellie
+Cameron, Laura
+Owens, Joe
+
+Algebra II
+Trocquet, Amy
+Hunt, Brittany
+Browning, Rita
+Gorman, Ann Marie
+Stone, Lisa
+Forcha, Chris
+
+Pre/Calculus, College Algebra
+Puckett, Pam
+Rivard, Rebecca
+Hughes, Ashley
+Lane, Kade
+Bourgeois, Deborah
+Wong, John
+Chang, Ti
+Sanchez, Anita
+Forness, Melanie
+
+END
+DEP
+Science
+Biology
+Edwards, Stephen
+Taylor, Amy
+Bartz, Jay
+Olson, Elizabeth
+Cantu, Analisa
+Thornton, Mary
+Carson, Caitlin
+
+Chemistry
+Turnbow, Jennifer
+Salinas, Irma
+Hall, Ryan
+Shadoan, Shannon
+Wilson, Mary
+Tillman, Carrie
+
+Physics
+Johnson, Esther
+Chaya, Bob
+Grumulaitis, Leonas
+Amadio, David
+Draudt, Elaine
+Kraemer, Timothy
+Lauver, Aaron
+
+Electives
+Felchak, Cristina
+Ferrer, Lalaine
+Romanelli, Crystal
+
+END
+DEP
+ROTC
+ROTC
+Ewing, Wanda
+Bryant, Edward
+
+END
+DEP
+Foreign Language
+Foreign Language
+Johns, Barbara
+Harvey, Penny
+Divin, Barbara
+
+Spanish
+Praget, Martha
+Alvarez, Bertha
+Whitson, Katie
+Perez, Ileana
+Ruiz, Aimee
+Martinez, Ramona
+Tolkov, Sonia
+
+END
+DEP
+PE & Health
+Physical Education
+Neill, Curtis
+Ahlfinger, Ashley
+Draudt, Chris
+
+Health
+Zachos, Mike
+Day, Nathan
+Crumedy, Andre
+Zarate, Greg
+Romanelli, Marcus
+
+END
+DEP
+Technology
+Technology
+Armstrong, Stacey
+Austin, Cathy
+Andrade, Lori
+Bond, Clif
+Nutt, Ryan
+Walker, Janice
+Whitmore, James
+
+END
+DEP
+Visual Arts
+Art
+Stuart, Charlotte
+Lausell, Christian
+
+Photo
+Guevara, Juan
+Fox, Tina
+
+Journalism
+Paysse, Abigail
+
+Theater
+Estelle, Tim
+Drake, Toby
+
+Professional Communication
+Clark, Brenda
+
+END
+DEP
+Performing Arts
+Dance
+Reilly, Lauren
+Burttschell, Ashtyn
+
+Orchestra
+Campion, Victoria
+Hermann, Jennifer
+
+Choir
+Womack, Jason
+Lusk, Henrietta
+
+Band
+Vasquez, Mickey
+Wood, Kevin
+Casillas, Cinjin
+
+END
+DEP
+Career & Tech
+AG
+Parisher, Roddy
+Allbritton, John
+
+Tech
+Bennett, Mike
+Berry, David
+
+Career
+Marsh, MaryBeth
+Hunt, Tami
+Thayer, Stacey
+Dailey, Maggie
+Whinery, Sue
+Farzian, Alyssa
+Billimek, Karen
+Johnson, David
+
+END
+DEP
+Special Ed
+Special Ed
+Voelkel, Lance
+Fox, Thomas
+Baron, Chad
+Gunter, Alicia
+Pease, Chris
+Mayer, Lulu
+Vander Hey, Ashley
+Schmitzer, Julianne
+Richardson, Monique
+Salinas, Moises
+Wakeford, Nancy
+Jones-Thomas, Tahtia
+Crowder, Beverly
+Hester, George
+Tallon, Sonia
+
+END

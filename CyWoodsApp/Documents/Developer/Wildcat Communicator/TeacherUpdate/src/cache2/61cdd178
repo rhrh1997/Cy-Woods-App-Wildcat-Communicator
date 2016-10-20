@@ -1,0 +1,142 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	Site Not Found
+</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="verify-v1" content="rVMzeoV4C01koYQckNipAcZUW+paYsLVYaCb7BT2Qug=" /><meta id="ctl00_mDescription" name="description" content="Epsilen Environment. Electronic Portfolios (ePortfolios). Social and Professional Networking. Collaboration. Peer evaluation. Communication. Course Management." /><meta id="ctl00_mKeywords" name="keywords" content="epsilen, electronic portfolio, eportfolio, social networking, group collaboration, professional networking, resume, course management, CMS, cyberlab, iupui, iu, host, institution, groups, courses, peer assessment, peer evaluation, content management, learning objects, object repository, epsilen.us, epsilen.com" /><meta name="Author" content="Epsilen Environment, Epsilen LLC" /><meta name="ROBOTS" content="NOIMAGEINDEX, NOIMAGECLICK" /><script type="text/javascript" src="/JS/JQuery/jquery-latest.js">
+
+</script><script type="text/javascript" src="/JS/JQuery/ui.core.js">
+
+</script><script type="text/javascript" src="/JS/JQuery/ui.dialog.js">
+
+</script><script type="text/javascript" src="/JS/JQuery/ui.resizable.js">
+
+</script><script type="text/javascript" src="/JS/JQuery/ui.draggable.js">
+
+</script><script type="text/javascript" src="/JS/EpsilenUtility.js">
+
+</script><link type="text/css" rel="stylesheet" href="/Style/LandingSite/Style/Style.css" /><link rel="shortcut icon" href="http://www.epsilen.com/favicon.ico"></head>
+<body>
+    <form name="aspnetForm" method="post" action="SiteNotFound.aspx" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPBYACSDRzSUFBQUFBQUFFQU95OUIyQWNTWllsSmk5dHludC9TdlZLMStCMG9RaUFZQk1rMkpCQUVPekJpTTNta3V3ZGFVY2pLYXNxZ2NwbFZtVmRaaFpBek8yZHZQZmVlKys5OTk1Nzc3MzN1anVkVGlmMzMvOC9YR1prQVd6MnprcmF5WjRoZ0tySUh6OStmQjgvSXY3dlgvTTMvWFdUM1ozOW5aMVBEM1oyNy8rbXM5L20xenJIUDcvV3I4My8vcnI4NzYvNW0vNm12ODJ2OVF0K25UZjV1L2JYL1UxZUYyMmV2cWphOUZtMVhzNW1zLzhuQUFELy81NmRSblZDQUFBQWQt3BE9LrIiFEjiCvu+W3cRTWsWQg==" />
+
+<link type='text/css' rel='stylesheet' href='/Style/Global.css'></link>
+<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="7JJ2OhAa-S7FtMHbbymByQBrWXnyyfF3vES_hN31WVUjzuoU5bX2DhhAHDFeWEprRsZP4x2h197UgFTyQ8bidUN7HAwosUjf15TW8mcEw4aUlP290" />
+        <div class="main">
+            <div id="ctl00_divHeader">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" id="tblLandingSiteLogo">
+                    <tr>
+                        <td class="topLeft">&nbsp;</td>
+                        <td class="topBg">
+                            <div class="logo" >
+                                <a href="http://www.epsilen.com/LandingSite/Home.aspx" id="ctl00_lnkHeaderLogo">
+                                    <img src="../Style/LandingSite/Images/epsilen_logo.gif" id="ctl00_HeaderLogo" title="Epsilen Logo" alt="Epslien Logo" style="margin-left: 18px;border:0px;" />
+                                </a>
+                            </div>
+                        </td>
+                        <td class="topRight">&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="ctl00_divInnerContTop" class="innerContentTop" style="height: 10px"></div>
+            <div class="innerContentAreaReg">
+                <h4 id="ctl00_pageHeading" class="h4">
+                    <span id="ctl00_lblHeading" title="Login">Site Not Found</span>
+                    
+                </h4>            
+                <br />
+                <div id="operaBug">
+                    <div id="scrollholder" class="scrollholder">
+                        <div id="scroll" class="scroll">
+                            <table width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td style="height:450px;vertical-align:top;padding-left: 10px;padding-right: 12px;">                        
+                                        
+    <div Class="info" >
+        <span><span id="ctl00_ContentPlaceHolder1_lblMessage">The Epsilen ePortfolio you are searching for cannot be located for one of the following reasons:<br /> - No ePortfolios can be located based on the search terms or web address (URL) you entered.<br /> - The owner of the ePortfolio has elected to exclude it from search results by parking it.<br /> - The member's institution does not allow this member's ePortfolio to be located in searches.<br /><br />Please verify the ePortfolio address (URL) or return to <a href='http://www.epsilen.com'>www.epsilen.com</a> to revise your search terms and try again.  For questions about a specific ePortfolio, contact the institutional administrator at the Epsilen member's institution.</span></span>
+    </div><br />
+    <table width="290" cellpadding="0" cellspacing="0" style="margin:auto">
+        <tr>
+            <td class="logedInHead">
+                Epsilen Links</td>
+        </tr>
+        <tr>
+            <td class="logedInBg">
+                <table cellpadding="3" cellspacing="0" class="TblBorderBottom">
+                    <tr>
+                        <td><img src="../Images/Icons/icon_asctivateEmail.gif" align="absMiddle" alt="Epsilen Environment Home" /></td>
+                        <td><span><a id="ctl00_ContentPlaceHolder1_lnkHome" title="Epsilen Environment Home" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$lnkHome&quot;, &quot;&quot;, false, &quot;&quot;, &quot;../LandingSite/index.aspx&quot;, false, true))">Epsilen Environment Home</a></span></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../Images/Icons/icon_createNewAcc.gif" align="absMiddle" alt="Create an Epsilen Account" /></td>
+                        <td><span><a id="ctl00_ContentPlaceHolder1_lnkRegister" title="Create an Epsilen Account" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$lnkRegister&quot;, &quot;&quot;, false, &quot;&quot;, &quot;registrationProcess1.aspx&quot;, false, true))">Create an Epsilen Account</a></span></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../Images/Icons/icon_signIn.gif" align="absMiddle" alt="Sign In to Your Epsilen Account" /></td>
+                        <td><span><a id="ctl00_ContentPlaceHolder1_lnkSignIn" title="Sign In to Your Epsilen Account" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$lnkSignIn&quot;, &quot;&quot;, false, &quot;&quot;, &quot;../Security/Login.aspx&quot;, false, true))">Sign In to Your Epsilen Account</a></span></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../Images/Icons/icon_forgotpass.gif" align="absMiddle" alt="I Forgot my Password" /></td>
+                        <td><span><a onclick="return openPopupWindow(&#39;../LandingSite/ForgotPassword.aspx&#39;,&#39;&#39;,345,650);" id="ctl00_ContentPlaceHolder1_lnkForgot" title="I Forgot my Password" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$lnkForgot&#39;,&#39;&#39;)">I Forgot my Password</a></span></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../Images/Icons/icon_asctivateEmail.gif" align="absMiddle" alt="I Forgot my Password" /></td>
+                        <td><span><a onclick="return openPopupWindow(&#39;ReActivate.aspx&#39;,&#39;&#39;,400,650);" id="ctl00_ContentPlaceHolder1_lnkActivation" title="I Did Not Receive an Account Activation Email" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$lnkActivation&#39;,&#39;&#39;)">Not Receive Account Activation Email</a></span></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="logedInFooter">
+            </td>
+        </tr>
+    </table>
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="ctl00_divInnerContentBottom" class="innerContentBottom"></div>
+            <div id="ctl00_dvFooter">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="footerLeft">&nbsp;</td>
+                        <td class="footerBg" align="right">
+                            <div id="ctl00_divPoweredBy" style="display:none" class="floatLeft txt11">
+                                 <span id="ctl00_lblEpsilen">Powered by Epsilen</span>
+                            </div>
+                            <div id="ctl00_divEdStepsPolicy" style="display:none" class="floatRight txt10">
+                                 <a href="JavaScript:void(0);" onclick="openPopupWindow('../CCSSO/PrivacyPolicyCCSSO.aspx','TermsOfUse',600,800,'');">PRIVACY POLICY</a>| <a href="JavaScript:void(0);" onclick="openPopupWindow('../Epsilen/TermsOfUseCCSSO.aspx?setting=TOU','TermsOfUse',600,800,'');">TERMS OF USE</a>
+                            </div>
+                            <div id="divClose">
+                                <img src="../Style/LandingSite/Images/buttonClose.jpg" id="ctl00_imgClose" alt="Click to Close" Title="Click to Close" width="55" height="10" style="cursor: pointer;" onclick="javascript:window.close();" />
+                            </div>
+                        </td>
+                        <td class="footerRight">&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </form>
+    
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23292102-1']);
+  _gaq.push(['_setCustomVar', 1, 'huaID', 'null', 3]);
+  _gaq.push(['_setCustomVar', 2, 'courseID', 'null', 3]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
+

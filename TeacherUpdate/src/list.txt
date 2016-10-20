@@ -1,0 +1,98 @@
+DEP
+English
+English I		Underwood, Traci     (TL)	Phillips, Mitzi	Ishmael, Brittany               	Leonard, Stacy 	Chumley, Doug	Streb, Jonathan	English II		Hill, Rochelle                        (TL)	Beckford, Sophronia	Hill, Nancy	Toliver, Amy	Getman, Nancy	English, Debbie	English III		Tannous, Candy                    (DC)	Fleming-Jones, Karla           (TL)	Lancaster, Kimberly 	Hall, Lorrie	King, Tina	Decman, Jordan 	English IV		Schlarmann, Elizabeth          (TL)	Nelson, Laurie	Flores, Virginia	Bell, Beverly	Sempe, Jennifer	Watkins, Alana 	PACE/Reading/PLATO		England, Stephanie              (TL)	Comeaux, Michele	Grigsby, Courtnie	Dodd, Jill 	Martin, Heath	Self, Nikki 
+
+END
+DEP
+Social Studies
+World Geography		Nichols, Justin                        (TL)	Kent, John	Kolkhorst, Todd	Sandefur, Rusty	Turnbow, Chris	Elizarde, Jesse  	Bricarell, Brandon	World History		Onhaizer, Kelly                        (TL)	Gillihan, Amanda	Jones, Sarah	Schlarmann, Eric	Abercrombie, Kathleen 	Lokey, Katrese
+US History		Villamagna, George              (DC)	Wilson, Mike                            (TL)	Wittschen, Kevin 	Loria, Thomas	Rogers, Diana	Self, Craig	Government/Economics		Stephanow, Leah                   (TL)	Collins, Lynda	Porter, Jason	Tate, Emily                              (TL)	Schroller, Wesley	White, Mike	Vance, James
+
+END
+DEP
+Math
+Algebra I	Carter, Catherine                 (TL)	Laskowski, Eugenia	Rosenbaum, Lindsey	Geometry		Hannah, Stacy                     (TL)	Weeks, Jennifer	Jenkins, Courtney	Prieto, Kellie             	Cameron, Laura	Owens, Joe	Algebra II		Trocquet, Amy       (TL)	Hunt, Brittany	Browning, Rita	Gorman, Ann Marie	Stone, Lisa	Forcha, Chris	Pre/Calculus, College Algebra		Puckett, Pam                         (TL)	Rivard, Rebecca                  (DC)	Hughes, Ashley (Hubble)	Lane, Kade	Bourgeois, Deborah	Wong, John        	Chang, Ti                               (PT)	Sanchez, Anita 	Forness, Melanie
+
+END
+DEP
+Science
+Biology		Edwards, Stephen               (DC)	Taylor, Amy  	Bartz, Jay	Olson, Elizabeth                   (TL)	Cantu, Analisa	Thornton, Mary	Carson, Caitlin 	Chemistry		Turnbow, Jennifer                (TL)	Salinas, Irma	Hall, Ryan	Shadoan, Shannon (Johnson J)	Wilson, Mary	Tillman, Carrie	Physics		Johnson, Esther                  (TL)	Chaya, Bob	Grumulaitis, Leonas (Brower)	Amadio, David	Draudt, Elaine	Kraemer, Timothy (Lambert)	Lauver, Aaron (Almanza)	Electives		Felchak, Cristina	Ferrer, Lalaine	Romanelli, Crystal
+
+END
+DEP
+ROTC
+ROTC
+	Ewing, Wanda                    (DC)	Bryant, Edward
+
+END
+DEP
+Foreign Language
+Foreign Language
+	Johns, Barbara       (DC)  	Harvey, Penny	Divin, Barbara
+Spanish		Praget, Martha                         (TL)	Alvarez, Bertha                         (TL)	Whitson, Katie (Antuna)	Perez, Ileana (Hernandez)	Ruiz, Aimee	Martinez, Ramona (Sheridan)	Tolkov, Sonia
+
+END
+DEP
+PE & Health
+Physical Education
+	Neill, Curtis                             (DC)	Ahlfinger, Ashley	Draudt, Chris
+Health		Zachos, Mike                           (TL)	Day, Nathan	Crumedy, Andre	Zarate, Greg	Romanelli, Marcus
+
+END
+DEP
+Technology
+Technology
+Armstrong, Stacey                 (DC)Austin, Cathy  Andrade, Lori                           (TL)Bond, ClifNutt, RyanWalker, JaniceWhitmore, James
+
+END
+DEP
+Visual Arts
+Art
+	Stuart, Charlotte                     (DC)	Lausell, Christian
+
+Photo
+Guevara, JuanFox, Tina
+
+Journalism
+Paysse, Abigail
+
+Theater
+Estelle, TimDrake, Toby 
+
+Professional Communication
+Clark, Brenda
+
+END
+DEP
+Performing Arts
+Dance
+Reilly, Lauren (Mestayer)Burttschell, Ashtyn (Pieri)
+
+Orchestra
+Campion, Victoria                  (DC)Hermann, Jennifer
+
+Choir
+Womack, Jason                Lusk, Henrietta
+
+Band
+Vasquez, MickeyWood, KevinCasillas, Cinjin
+
+END
+DEP
+Career & Tech
+AG
+Parisher, Roddy                 (DC)Allbritton, John
+
+Tech
+Bennett, MikeBerry, David
+
+Career
+Marsh, MaryBeth                 (TL)Hunt, TamiThayer, Stacey Dailey, MaggieWhinery, SueFarzian, AlyssaBillimek, KarenJohnson, David  
+
+END
+DEP
+Special Ed
+Special Ed
+Voelkel, Lance                    (DC)Fox, ThomasBaron, ChadGunter, AliciaPease, ChrisMayer, LuluVander Hey, AshleySchmitzer, Julianne (Miles)Richardson, MoniqueSalinas, MoisesWakeford, Nancy         (TL)Jones-Thomas, Tahtia      Crowder, BeverlyHester, George Tallon, Sonia
+
+END

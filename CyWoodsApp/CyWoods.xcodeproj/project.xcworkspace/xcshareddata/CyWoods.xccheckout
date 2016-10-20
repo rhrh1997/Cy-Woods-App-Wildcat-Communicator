@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>85F2D6D9-9CE6-4B8D-83C6-5E76F5C46821</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CyWoods</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>16793920797D28F2F523E6BE916DBAF3CEFE797A</key>
+		<string>https://bitbucket.org/hassaanraza/wildcat-communicator-experimental.git</string>
+		<key>D6D83FCB-7C1C-4A67-A71C-1EB7207FD994</key>
+		<string>https://github.com/wyndwarrior/CyWoods.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Documents/Developer/Wildcat Communicator/CyWoodsApp/CyWoods.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>16793920797D28F2F523E6BE916DBAF3CEFE797A</key>
+		<string>../../../../../..</string>
+		<key>D6D83FCB-7C1C-4A67-A71C-1EB7207FD994</key>
+		<string>../../../../../../../CyWoods</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/hassaanraza/wildcat-communicator-experimental.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>16793920797D28F2F523E6BE916DBAF3CEFE797A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D6D83FCB-7C1C-4A67-A71C-1EB7207FD994</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CyWoods</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>16793920797D28F2F523E6BE916DBAF3CEFE797A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>wildcat-communicator-experimental</string>
+		</dict>
+	</array>
+</dict>
+</plist>

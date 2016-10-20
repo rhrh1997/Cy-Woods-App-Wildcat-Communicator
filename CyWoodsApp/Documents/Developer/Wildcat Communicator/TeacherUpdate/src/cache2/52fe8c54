@@ -1,0 +1,1174 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head1"><title>
+	EUGENIA LASKOWSKI - Epsilen ePortfolio
+</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="verify-v1" content="rVMzeoV4C01koYQckNipAcZUW+paYsLVYaCb7BT2Qug=" /><meta id="ctl00_mDescription" name="description" content="EUGENIA LASKOWSKI ePortfolio. Powered By Epsilen" /><meta id="ctl00_mKeywords" name="keywords" content="Epsilen, ePortfolio, TX101907, CYPRESS-FAIRBANKS ISD, EUGENIA, LASKOWSKI, , , , Powered By Epsilen" /><meta name="Author" content="Epsilen Environment, Epsilen LLC" /><meta name="ROBOTS" content="NOIMAGEINDEX, NOIMAGECLICK" /><link id="ctl00_lnkPublicTheme" rel="stylesheet" type="text/css" title="Public Theme" href="http://www.epsilen.com/Style/PublicThemeMaroon/PublicTheme.css" /><script type="text/javascript" src="/JS/EpsilenUtility.js">
+
+</script><script type="text/javascript" src="/JS/FootPrint/mootools.js">
+
+</script><script type="text/javascript" src="/JS/FootPrint/side-bar.js">
+
+</script>
+    <script type="text/javascript">
+        var baseURL = 'http://www.epsilen.com';
+        var isPreview = "0"
+        var accessKey='';
+        var icon_root_path='http://www.epsilen.com/Images/Icons/';
+        icon_root_path=icon_root_path.replace('~/',baseURL + '/');
+        var tree_root_path='http://www.epsilen.com/Images/csh_vista';
+        tree_root_path=tree_root_path.replace('~/',baseURL + '/');
+        
+        function chkAccessKey()
+        {
+            alert('Invalid access key.');
+            return false;
+        }
+        
+        function changeAccessKey(pAccessKey)
+        {
+        }
+        
+        function showDefaultIcon(obj)
+        {
+            obj.src=baseURL + '/images/Icons/CustomMenuIcons/icon_MenuComputer.gif';
+        }
+        
+        function onImageMissingHeader(obj)
+        {
+            obj.src= baseURL + '/images/Epsilen_Logo_White_Small.gif';
+        }
+        
+        function openPopup(obj, height, width)
+        {
+            var path = obj.getAttribute('popupPath');
+            openPopupWindow(path, 'PERfileFolderInfo', height,width);
+        }
+        
+        function quickLinkClick()
+        {   
+            if(readCookie("Epsilen_PER_Public") != null)
+            {
+                createCookie("Epsilen_PER_Public", (readCookie("Epsilen_PER_Public") == "Closed" ? "Open" : "Closed") , 0);
+            }
+            else
+            {
+                createCookie("Epsilen_PER_Public", "Closed" , 0);
+            }
+        }
+    
+        function changeClass2(divId)
+        {
+            mainMenu = document.getElementById('lnb_container');
+		    thisOne = document.getElementById(divId);
+		    items = mainMenu.getElementsByTagName("h3");
+		    for(var i=0; i<items.length;i++)
+		    {	
+			    var itemId=items[i].id;
+	            if(document.getElementById(itemId).className=="h3" || document.getElementById(itemId).className=="selected" ||document.getElementById(itemId).className=="h3 selected" )
+	            {
+		            document.getElementById(itemId).className="h3";
+	            }
+	            else
+	            {
+		            thisOne.className="selected";
+	            }
+	        }		
+            document.getElementById(divId).className="h3 selected";
+        }
+        
+        function quickLinkClick()
+        {   
+            if(readCookie("Epsilen_PER_Public") != null)
+            {
+                createCookie("Epsilen_PER_Public", (readCookie("Epsilen_PER_Public") == "Closed" ? "Open" : "Closed") , 0);
+            }
+            else
+            {
+                createCookie("Epsilen_PER_Public", "Closed" , 0);
+            }
+        }
+        
+        function click(e) 
+        {
+            alert('You are viewing this ePortfolio in "Preview" mode. This means that all links, buttons, and other options are disabled. This mode is for viewing how an ePortfolio will look and cannot be used to access any tools, options, or other pages.');
+            return false;
+        }
+        
+        function SubmiAccessKey()
+        {
+            WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("ctl00$btnGo", "", true, "", "", false, false))
+        }
+        
+        function ValidateAccessKey()
+        {
+            if(document.getElementById('ctl00_txtAccessKey').value.length<=0)
+            {
+                alert('- Access key is required.');
+                return false;
+            }
+            __doPostBack('ctl00$btnGoNew','')
+        }
+        
+        function onAccessKeyPress(e)
+        {
+            var key;
+            if(window.event)
+                key = window.event.keyCode;
+            else
+                key = e.which;
+                  
+            if(key==13)
+            {
+                ValidateAccessKey();
+                return false;
+            }
+            return true;
+        }
+        
+        function onBodyLoad()
+        {
+            if(readCookie("Epsilen_PER_Public") == null)
+            {
+                setTimeout('extendContract()',1000);
+            }
+            else if(readCookie("Epsilen_PER_Public") == "Open")
+            {
+                setTimeout('extendContract()',1000);
+            }
+            
+            var maxW = 530;
+            if(document.getElementById("dvContainer"))
+            {
+                var pix=document.getElementById("dvContainer").getElementsByTagName('img');
+                for (i=0; i<pix.length; i++) {
+                    w=pix[i].width;
+                    h=pix[i].height;
+                    if (w > maxW) {
+		                f=1-((w - maxW) / w);
+                        pix[i].width=w * f;
+                        pix[i].height=h * f;
+		                if(pix[i].width == w)
+			                pix[i].style.display = "none";
+                    }
+                }
+            }
+            changeAccessKey(accessKey);
+        }
+        
+        function toggleChannels(ctrl)
+        {
+            if(document.getElementById(ctrl))
+            {
+                if(document.getElementById(ctrl).style.display == "")
+                {
+                    document.getElementById(ctrl).style.display = "none";
+                }
+                else
+                {
+                    document.getElementById(ctrl).style.display = "";
+                }
+            }
+        }
+        
+//        if(isPreview == "1")
+//        {
+//            if (document.layers) {
+//                document.captureEvents(Event.MOUSEDOWN);
+//            }
+//            document.onmousedown=click;
+//        }
+        
+        var from_time = new Date();
+        from_time = from_time.getTime();
+
+        function show_loading_time()
+        {
+            var to_time = new Date();
+            to_time = to_time.getTime();
+            var secs = (to_time - from_time) /1000;
+            document.getElementById("loadTime").innerHTML = "It took <b>"+secs+"</b> seconds to load this page.";
+        }
+        
+        function logoMissing(ctrl)
+        {
+            var themPath = document.getElementById('ctl00_lnkPublicTheme').href + '';
+            var logoPath = themPath.substr(0,themPath.lastIndexOf("/")) + '/images/epsilenLogo.gif';
+            ctrl.src = logoPath;
+        }
+    </script>
+
+<link rel="shortcut icon" href="http://www.epsilen.com/favicon.ico"></head>
+<body onload="onBodyLoad();">
+    <form name="aspnetForm" method="post" action="eugenialask" id="aspnetForm">
+<input type="hidden" name="__NEXTPAGE_drpWelcomeNotes" id="__NEXTPAGE_drpWelcomeNotes" value="0" />
+<input type="hidden" name="__SORTBY_drpWelcomeNotes" id="__SORTBY_drpWelcomeNotes" value="" />
+<input type="hidden" name="__TOTALPAGE_drpWelcomeNotes" id="__TOTALPAGE_drpWelcomeNotes" value="1" />
+<input type="hidden" name="__NEXTPAGE_drpNews" id="__NEXTPAGE_drpNews" value="0" />
+<input type="hidden" name="__SORTBY_drpNews" id="__SORTBY_drpNews" value="" />
+<input type="hidden" name="__TOTALPAGE_drpNews" id="__TOTALPAGE_drpNews" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPBeRWSDRzSUFBQUFBQUFFQU95OUIyQWNTWllsSmk5dHludC9TdlZLMStCMG9RaUFZQk1rMkpCQUVPekJpTTNta3V3ZGFVY2pLYXNxZ2NwbFZtVmRaaFpBek8yZHZQZmVlKys5OTk1Nzc3MzN1anVkVGlmMzMvOC9YR1prQVd6MnprcmF5WjRoZ0tySUh6OStmQjgvSXY3dlgvTTMvWFdUN1hzUEhuNzY0UDdld2M1dit0djhPci9nTi85MjFiUmZOWGw5UEoxVzYyVjc5blRyenUveitycHA4OFg0Yk5sK3VqOUtGODIwcXN0aU1rcC9NcStib2xwK3RqL2V3WCtqOUdSZHR1czYvMnlacjlzNkswZnB5L1drTEthL1YzNzlwbnFiTHorYlBIaVEzWi9lLzNUMzRiMzlmT2ZnNGE5M2IrL2UzdjdCTC9qMVh0YjVlZkh1MS8wTjgvVkZ2aXl5TW12ZS9qYS8xdmx2K3B2K05yL1dML2d0ZnYvZi8ybCtuaEZrUWlsdkdnTDI2LzU2QW5mMjIvdzZ2OWF2OVp2T2ZwdmY0TmY2dGRIeTE1OVd5elpmdHIvdXp1bFhuNSsrT0R0T254Ky8vcjIrL083cjMrc3N6VjlXZFh0ZWxVVTFUbDlXVjNtZHo5SW4xK25wcWluS2ZEbjd0WDRkQXZDNy9OcS83a1EvR0hrdmpOSTN2L2Z1enU3RG5RYzB3Ti9uNWF2VDE2KzNueDJmdlhweS9PTDNlcDJldlg0NlNyVy9rZXR3bE1wL3NiNStmU0Q3Njh4cHlML3UwYnh0VjQvdTNyMjZ1aHJuOHYxNFdpM3V2bTZ2eS95dWpQTE5QRi9rWDJSMVZTMzlUOGJUcHBuOVdyL2hiL3BiZmZKci9mcS83bThUaC9Qci9wbzdzMS8zZHh2bzQyeVJYZVROM1RPaVduUDMxLzE0YzZ0cE0vLzlMNHVtelg3ZDMyTGFsanM3djMvN3pwdVAzMG8rSzVkdlBRUkIxTmx2ODV2OVdyOG04ZFh2OHV2TWZzR3YyeFp0bWYrNnYzV1Voci9OcjRWMnY5WXYrTFdiZXZyci91ZS9waUpUb1BNQW5XOW55MW1aMTNmUGxnMWpwbitQczJiKzd2ZFlFOSsrdVY3bG4wMS82dVZQdmJoNzhIWnhkdnJaTDV3VFI1ODkvZXp1dy9tVE4vZSsvUHo1ZDZyUGZtRmJUY0dQbnovN3N0aTlXdDNiLytxTDV6K281ODkrOEthWVorZnQ5ZXRuZXcvcjQ2ZDczMzd4MWNQZmUyZjVlNi9ldnZ2cTRza3F2L3Z0L1o5WTNydTYvM3M5Kzg1M2YvclovZGVmLzE0L01YL3c5b3ZyNzM2MWMvSzYyUDJpK29uN1AvSDY0clBQZm1IK3J2MXMvOTRYcC9YeU9HLzNkejc3aGEveTh6cHY1cDhkL043WG41OC8rSDEySGg1ODlkbU1tZmMzb1lFelE3eWhsMzdkMzd6SHVyUFpyL1hyb3NIdjh1di91c25PL2J0N3UzZjNkbmJ2emNCR0lPeXYvK3QrTkRCem5pejlndC93UlhaWlhHUnQvbFZkM3VhRkdUaExPald5TnZ1MWZ1UGY5RGRqTWZ2Sm9pa21aVDZmL1dhLzlhK3QzLzc2eXR5L0ljMExUZk82SmJXdzhjdmY2cE5mKzllK3VMajRiWDdOODltdnhjUC9kUnV3L0svN0c4K0tabFZtMTQrVzFUSS9aSzVnTkhMcS96Zm5YMzlzVHIvKzJrUTRmSWQvaVRvem9GVXRwOVRaMjEvM3FzNUpDUzNUYXBVdlgxYXI5ZXE3eFhKV1hXME5jZmpuWlRYSnlyc24xV0pSTGIrZGx5dDY2YXNWY2RUcTNlL0JMUHRaOC9tNzlkUGQ1Zjd1dyt2cHdVOWYvVVR4ZTMzNzJ6OTkvTmxuSDQ4Ky9uaDA3LzdPNk5PZG5UdUhxa1IrblYvM1cwTkNuVS9YZGRGZTMzMWVYUlJMN2dCek8vdHRmcWR6ek9TdjkrditLVGZ6L2N1ODd2UDl2S3V6UDh2dVY4OG4rVSs5ZXpJaFpsOFZVMmhsK25oLzkrcHVPNzk3OWVMVDQ4OStZVlA4SVAvczN1VDNlYk04YlpkUHZ2d0ordVRiSWlybmszVzE5L1Q0NnVYOXJ6NzdCYi81VjYrZVA2dnE0M0t5WHZ4a2taTTYrM1cvTnpEQUw2NmhOSW1XTXU5M3ZYZDRJb1NtbTdHZHNSNmdXU2JkemhyaE56eDUvWk04NU5ldlR2NWZTU0ZWWFRSL2p3Zm9ZcFNvNnRxN0JmMzQvY25rWFJiVnVubmQ1cXZ4UlhFT3BpWW92L0gveThkNDhENWpmRUVxelkwUDJrNG05WGY1alg2V2VlalhWdVgxRi85YWo3TVVsdmF6ajcrVFhXYXZwM1d4YWg5ZFZzVnNhK2ZPeDZtSTk4Y24wQnZwbkF4MTJsYnBDaE9UWDZYdHZHaFNwZHJIS2V1VzAyVTJ3UXU3SDVzdnpwYXovTjFuSCs5OG5LcjYrZXpqODJ5V016RytYTGRiUnRmK3YyZ3VQeHJ4ME81OGZMVDcrRzUyTkZQR0k0bjd0UXpkb0cxL0hTVmgxQ0w5ZXE3ZHIrOSsvUTE0Z2duYXIvZTdKTDl1WWpSNWVrZzY4YU5GVnBSdDlVaHR6QmhHcHJwcTNoYS81L1M4YUdialpkNytnaDhybHN1OG5yZUw4dGY5SFRlMGc4NmtIcE9PclpqOVdqK201b0ZNRitGeERxdHc3bGd1K1hWL2wwVldrK0xkcm91TGVmdG9kMmYxN3JBRDRkZU9BLzQxdnpsUXZ4RSsvZzEvM2V2M3RGRVIwL0Y3OUR6MWdFYytIcVVmZjNGOVV0VkVVdnI5VTdKUzZjT0RuVHN3NDR6Wmp4bk1EbVZzeHB5YWY2RjZmLy9mOVl3Yy94T0EvN1YrTFI2OTBFQTQ0N2Q0azJmVGViRzhTQ2t5SU9GcDJtWUdLZit0ZjgzZjdiaTh5Q2QxbHBJZmJIK2wzei9QcTBYZTF0ZWo5SXN2anAxQ0VIQy96WGZuVlVvaTkwWGRqTlBuWnQ1L0R3WDVoLzRtaitkN1I0K2JWYlpNMlZYNDdLTnpjdmUzd2ZPUFVwcUI5akNkVm1WVlAwcC9mSWVmdzVRYm5HZUxvaVF1UEs3SnRmbm82Q3lkWjVkNU9zbnpaWHBWMVcrQi9ubFZweWZYSlBkTnMvMHNLK3BKdG56YnBHZmoxK09uWS82eXVzenJkUGYrT0QxTE4yTVE2N0drdDIxWFYwVTcvNFhMU2JNNmJOcjFqSUtWSmlXNVQ1czh4N2Z0UEU4L0tzRlQ2V1JkVGo1S0w2cTBPajlQcithRUxYMTVuVjdVTlBkcFJrTmRUdk5WeTlqaHJmT2libHJTWnhRWEVKSnR0Z1lNUUM0cCtFQURPdzFwbTJlTE5HdUp4TXVMT2YxNlV1ZjUyL1RiMUd2YVRPZFZWUXArZ1B3d3ZjNHptZzc1SkgxZVZaWmVEYzFrMnBBaXl0TmltUzZ1MDdJNHowY0FYMmZMNWp5dkVmV1FObFc2cHQrdHFsa2pjT1JmK201T3poYUxBQTFvU1JwMzduQXdYZnJUMVJwMlcyVHRIQ01JWUtmTDZpcHRDaUpMZXBVelZFS0FVTnZiMmZsMC9QZ3VwdTNJL2lCV1NyOFpmbnAvZmpoTFFYOFozekpyQ3hyZXQ4a1BhQ3ZTZDB1ZU14N3lNZ2ZUWFJLTHJFSEs4NnhPeit0cWtjNko4SjNoL0J3TXdzMFBEWWFVWVYwUWpnWjMrVzR2cGRrcVp6V3BNRzM4WGJEeDJjY0xtcXJXU2dUUG8wemhLTDJ1MXVtVVVGazM2NndzcjRtdENlUkNBVUpiR1JraWMwdVRmQTdHczczOHYybVNqNmZrQlN5S2Fmb2ttNzY5cUVtRHpoNUY4VnVYUjQvTDR1Z3hjZkxQQ2FKUFNNdWxaRjZxNVN5cnI5TXZTTFJ5a3E5aVNyUHhtdVpXV1ROOTNWTDBtSDYxSkhhbHBFOTduZTQrZlBpZ095SWV4RjBNNStkeVNEOFhmVDRaUHhrZmo4bkFrYm5OeXZUSm1qUVJxYWF2UWNNaGl0NGxUcG45V3I5SjNLMzRUYnMySFM3YTdMZEpqTk1pRnZiWHVuZGd2TDNmOU5mNmhiL05jMnZyOGNsdjhPcys4SndQRXNSMlBjblorYmpLMnVuODk3ajg3T1ZzOS83TzcvUG00RHUvOThVdlBNOHp6dlN0eXVrS01HQ2l2N1d6U3lKTzhreEd2TTdMREhFKzY0UXIvVEJMejlmTEtUNFcyKys2Zm5oRDF3ZVRueWpxNzd3Nk8zaDRacnVtTGhibmE5UDViN216bHo0bm1wT2FmS2FkTkM1UElMMjh1cUdYM2NzdjNqVnYyL24rRndlL3NLUmsxMmRmZlVVQnpIZU9mM3IzNFMvNlJjOTNmdUpaY2Z6Mi9GNTUveWQrWWNGdS8rNjlYZFA5TDlqZFQxOVg1U1gwRTlLbGk3eEpKOWZwNTNXMmdzbVNYSmpENU5zM1lQSlQ1ZlhwNy9PNnVKaVV2ODltVEV6L3YrdnUvYUQvZk1IOXYxNVBPT1hDSlA5MTN3dUZIN3g2ZnZMN3pMK3FmdUwzL3VwMktPenRmdHBEUVdlRWNpdVRZc2tNY1RjOUxZdUYvaUZjZW51Y252OCtpOWUvMTk2TEgveWlnLzNiNGZRNzdENnd1SUFUajFjckN0SzA3MTgvNk52UDJzVDYvcjJQZjlIdjgrRHA5TTJML01CQS81MTNEK0Q2MXRWc3pRd0hmK2NuMXRtc1p2MHA4ZER0ZWJ6K3diMm45NTVuRDNkK0x5ZGVJWS8vcnJzUFBmZzhJTklrOUR0cG5HWmVuSlAvVFVIUSt3enE5QmM5KzhINndSZXZ2dmpPc1pYaXZSMi9rMjFNSHJ0WlZweFAzNUZ1YXBpRXlYdjE5dnMvL1AyblpmWEZUK2JQdmpDOS9UWjd1MzV2TCt1TUtEbk5KWWE3UGVSc2Z2SlR4Zlh2OVh6bjlQY3hrTWQ3ZXo3a3B4VkZvSUwvSzNKODh6NDcvRWJ2MWVPTEozc1BxKzgwMzc3M3hETGI3N3gzeisveGxhUVIyRU9uMkFpQjEvdDA4SXZlL3ZURHF5OSs3MmNuVHl5Ly9ZNTcrMlNyaXdVaGZjNmUwTXVxdkY1V0M3SkFEVXpEKzRDL3lsYkZ5NS9NSjcvWGQ2OE0rSS8yS01MNW9xSXNDUGR4N2ZydzV1VTNmYTlldmx6VzMvNzJUOHllZi92RnZtWGl2VStwRjFyT0thaUx6aUJVbW42dDMreTlPcm4zN1I5OHRmMXU4dW42OTI1TUo5dDdENFk3WWYveHlaZS9ON1BBc3kvUG5pTzEvRDRkL3FLTDMydjlvaXF1ZGk2czFQeUN2WU54QUROZGdKQXJTN2ZmNHIxNmVQRDI1ZmJrQjEvKzVQYkUwdTEzMkhzNDlvYVJaajd2L3BidnBXa085bi82aTh1ZnZqeXBmLyszQTVybXQwZG5QZ2N6Rjd4aE52NnQzbXNrVCsvUGZ1K25QL1UwKy9UU2p1UzN1YmREbnRMSk02RVZFYWlxTVVXelgrdTNmaS9JYjM3L0o3L1hneWU3K2U0OU93dS80NzNkTVd3UUx6RTBJZnpaci9YYnZCZjR4WlByTncrLzg1TS9mYkU2czFOd2I0L0JJeUNsMk1SaG5sM1BmcTNmOXIyZ0grL2YvKzc4N09xbjF2c1crbTk5Nzk3WTZZK1VjdTZMZFpuTmZxM2Y3cjBBMzEvOW9Hb3BJUHZ1VDFsTitEc0JzTEhNbm9MNm9uaUhyTjF2LzE3d0owOCt2WnptVDU1ZDdWcXFmM1J2UHdvLzBLNi93M3YxOHF4NjlmbmJuN3ovOE1tblZ2bWw5MGc3Mlc1WXVoWVlnQ2RqditONzlYRlF2WHErL2ZMZDR2ZC92V1A2K0lYM1NEZDVYRzk2KzBWdVVLTEtmNmYza3JlejhqdDdCOHZ2NUQrb0J5Mzd6ajNSdkViUlVuekx2dlRIeG9lYS9WcS84M3M1NjVQZisvUHkzdlBmKyszVDUxWFVXZC9aMlU5Tlo5K2wxQ0tHYVIxbnlUUzhyQ3NzOEtZbjg2eUdhL0VMQWdTbU41bmtiLy9FL1o5Kzl4UEZpNzNiT2RNUFBEUlhLMXBzbnVXVlFYYThjejgxU0RLWlRtbEdCakVsVGZLN3ZOZjh2RGordlg3UlQ1ejh4SGUvZS9JVEEvUHo4YzZuNkdSRlN4UFVLNjFPUEMzcWZOcW1QNWxSK0RkaHoraEZSYXd4KzdYUzk1cWwvVS92bGZQODdmNTM5L2Vqcy9USnpvTys1M0pDOFdleFhGTlF5UjgrTFpvcHBaT0ovMy9Yb08vOGhyNkxrNTk4OGRQZi9uMStyeWNQVG04MVFidjNOazNSYU9jZ2ZibHVlWXJjN0JEZXIwdkt4VW1HbURPVzBHdXpYK3VqOTBMMTl6cDl1Znp5OXpvN09TOXVDSWNzcXZjM29Qcnh6c01vcXVTOVU0U09QTWhNc2Z6eDk4Snl1bmo3ZzlsUHZYajQrdnFHNk1SaXViY0J5OTlpZDRkbUdqbkFyMWJwRjNrN3IwaFgvMjRCUXJPYnZQdWYzTHVYYnorY2Z1Y25iZ2poTEVJYjhOblozYlV5Q0xZem9XMjZtMTZTRk5BU09qTEJPZWhaVWl2SXd1OGVZSHRUY1BmdEwzN3F5YnVmYVBNdmwyOXZGOXo5TnJzMjVEL2pqazIvdi9DOStuMXliN2xjSGZ6RS9Ddzd1MjIvOTRJTzFXTE10RWRhZ1VKNncvNktISVNYZzluZmNUbVlyZC9tNWEvbDUyQisvVi8zMy95MU55eFlIbjZjRnJQUFBpNlhiNTlWNVN5dmYvKzkvWjM3TzUvdTBXb2sxcEJlVXU3dU03UGdpTkZ1V2xkOVJ0OThrUzFwNGJIMmYvZldXTSs1RDFwVyt2Ym5MNzl6Vml6bkwrN1IwbVBSUEsrbWIvUFpaMisrK3VvN2V5L3V2Zm5pcTUzUGZxRzBmWkV0YVAxeDkrTFRuMngvK3ZUaHU2dlBmdUhtZGN5UDdLTHBSOTVnN1pyWUZwWXBSK21ESFZxNk9yaFB3Ly9JTE5qS0dENCtlbHdzTHBnazlMTkxFc3F2cmFpcFlQWnhtazFoSVg2di9QcXpqMWY4OXVqanRLbW5udzJ0dUpuMTdHa3pKemxvMnV5dVFEb3BxeWFmWVVHYllKYXR4WVgrS0M2V24zMmNUWnBGTWFPVjNJL1R1MGVwZktuTHJIN0s2OWYvZGYrbFgrZDlabnAzNStEaDd0Njloei9MVS8ybVhGMDhlYnY3NVhlKzg1MnZkaC9zdmM2TGszdUxpODl1TWUwdjZ2Yko3UG5yNnZjK2VQcUxYcS9QN3A3VnB3Yy91UHZ0MDUvNDZjWFYyOC9ubjErYy9zVHlKMVp2bHRmWjcvT3p4aFptamV0TGFnck45RFM3SmtFbFIyN0JPajdLTDQ2d1B5eUd1UW5MT0NmZDhKWmR5ZmRaN0IvK0dpeDIvK0JubWNVKy8ra3Y5Ny9ZdjJybkQzL3Z2UmZsUWZINXhWbjJVOGZ2eDJMSG4rKy91bHplYTM4cS8vSW5uczN2clQvOVpQbjVxemRmbGUzRDFTZmZlZmZxN094bm5jVk95cXhwc0lUMWJWcU93ODkwQTNlQnBqOXM3b29ndUpteCtpOG9UL21aNjEvLzEvMTczNCtuZG1uMWRmL2daNXVudnJ0LytoT3JkNVNMKy9UdTg1OSs4T0xOZWpaNWUvOTllZXJMMTBWN05hdVB5NU9YMTcvb0ozK3krWFQzeXk5ZXZYaHc5dkxzNnJ1L3ovSHhUL3lzODlTbjZYZHBKWjZpR0hLbDRJWEdPY3BTOUlmTlVUMzBOdk5UdDdseWs3OEk4ZXYvdW4vUTErQ21oL2QvdHJtcGVqRzluOTMvdEZwV081ZDNWK3VkNjkzWmc1KzREVGM5K2NHejlWbXgyeXdPcW9OUDczN24yM3ZmblZjMTN2eFo0aHoyd2RPWDJTcmZ4Q3dnMkErTFdYeU00dnpodFZDVzhOZUFmdjFmOTg5OFg1YlkzYisvdi8renpCSVhzeCs4ZlhweDl0VWVPVWpQdi9QMjRQWFpEM2F1YnFWZ3lyUHEyMjkvY0o2OS9mTGlwL0x2L2o2NzFjSERMM2ZXTDUrL3ZiNTYvY25sMWUvenM4VWFKSWJwOGZxQ0ZwN1R2UWZiOTNhSCtFT3A5OFBpang1YWcwb2thS2FjNHEvWS9mcS83cC96ZFRqbFoxdDVYQjk4ZXZaN2ZaN3YvK1NyK3J1NzV5OSswZTZUTDZyeVZoNzA4K2FyMTIvbWsvTlorZFA1dDMvdzRzWCsvZlBqQjYvYWFuZisrU2ZUK2JkblA1dWM4cG95TS9saVFzbUcvZTBIbTFqbGg2aEsrbmdOODByUVRwbkZYMzM5OVgvZHYranJNTXVuUDh2TThwTjM3ejc5NlYvMDdLZS8rNE8zbDR1blQ3Lzk3b3ZGdEwxNlAyYTUrSW1meks2Ky9TWS8vdUowZWJyL2UvMCtYenc5Zi9ERjVRK0hXWFozdG5mM043SExwejlYN0NLWTNZWmh1S1d5akw5NC90NHNjLy9lL3M3ZXd3Yy95eXp6K2p2VHM5ZnIrei94NmNGUDNNMCtQL21KNTR0UDJ1WDc2cGUzNWN2cUp5YmYrV1J2L3ViM2VqajV6cFBGazVQSkp6OGtsbm13dlRkZ2pDd0JmNDVZaGpHN0ZjdWdwYkpNOG9Fc2MvL1RUMysya3pyZm5lLzk0UFRwNVUrLys4N3U2Nko1VXh4VXAvTzc3OHN5WDMyU1BiMzh2U1o3WHpWZlhMNTkvbUQ1VTg4bjkzL3FoOE15ZS92YmV3ZURMQ01FL0xsaEdjSHNOaXpETFpWbGZzT0FaZjY0OTJNWml2MGVQbnl3KzdQTU10bmUrdVhMeStyYnA0c252K2pkZzU5ZUhiK3RmdkxKclF6VDU1OS9lKzg3bjM5eS9GUFBkcytPVDM2ZnIvYnp4ZlhPMWM5ZUNBUXlmMGtMOFN5WDIvZmpiR0tKOXNOa0V4K3JZUmJ4V2lsNy9FWWZFZzQ5dUxlemQrL0J2Wjl0OW5qMlV6KzUvOVBQM3A1OHUvNzgzdTR2bWo1NzhMd3NiaFVoZSt6eDhGMWQxK3VmckwvNzh0N3VzK21MMmZYQlQvL2crUStEVFE2MmQvZmlmR0twOTNQQko0eld6WXlDWnNvcHYvR0hoRU1QOXZjZVBMai9zNjFJMnJmejMvdmVkKzQrZU5FZUxINzYvdTgxKy9ieDh1WHVlM0lLNVUrdnpsYjNmdm9IditpOCtQS25uOXk5dnBoKzlYdjk1QStEVTNidmIrOCtIR0NWL1QwaDM4OEZxd2hlTi9NS3QxTm0rVTAraEZrT2FGRnRiK2RuZTZGeCtleittN09kNWJ0WGwzdlg5NWFyRitmUEgvNCsyWHRhblh2Zlh2L2c4dUg2SjUvKzRNbnU3N1g4OWc4VzkxYjMzL3hlUHd4bTJkdmIzdnMweml5V2ZEOFh6Q0o0M2N3czNFNlo1VGNObU9VZit4ck1jdTluTzNhK3ZMeTZ2L2Q3dmYyOVR3NCtYejM1cVh2ZmFUN1AxNHYzWkpiZG5kbXJUOTg4bmYzRTNlODgvWW41VjYveWVmWjcvVjYvNlByM1daNDhYLzArWDJibHo5NEtka0Q0aCtsMitxSzZWRTl4QXd1QnFEOG5MTlRCOEJiTUZMNmhiUFdiZlJCYmZYcHc3OTdPejNhdzlMVCs1Q2VQZisrRDMrc2llL0gyaS9hcnA2ZVhQL1h5MDFzWnJLZWZMcXJkVitmeno1K2UvZFF2K3ZiZG4zcTUzSHQ1T2Z2eTVLZC8wZUtuTG4veVJWTm43ZSsxYzdEM2U2KyttdjZzc3BXbCtuMS9DZ2JNbUNYcUQ1T3RoakFjWnF1Qk41U3Rmdk9BcmY3ODkyUXJNdVAzZDNkK2x0bnE5enAvL1VuKytmN2VGOWNQejE1OHVyZjMwMDkvYW45eHF4amNzZFh6MS9lZWY1NTk5NU4zQjR2ZjYrRW5UeTYvS243eTgvblBxaDlrS2IyN3Q3MDdaTnNNL1g1T09FZ1F1d1hqY0VQbGw5L2lRM0kyTk40SEQzZCt0djNtVjlQWmQ4K3JIMXg5dm5mKzhNVjUvbkoxK1hzdmI3Y0c2ZmpsTzUvZWZmMTc3L3hlNXdmNTh2bTdYelRaWGV4K2VmM0Y0b2ZETDZUKzkzWUdHVVlJK0hQRE1JTFpiVGlHV3lyTC9KWUJ5L3d6NzhVeWV6djNIaDdzN3Yxc08wVFpRZjJEbDZ2UDc3Mzl5YnUvMS9sUHZUci9xWU1mSEdTM1VqRmZmRGMvTG1hbmI3OXo3LzZMVDMvaXUxOCsvZVROOHllN2x6KzR2N3I3K1pOWGQ4dmZlMzE1OS9qdDd2eDhkdmF6YWJuR25zUHdxYWZtNzhVWnlaSDFoOGhJRzNBY1pLbmhkNVM1ZnF1QXVmNkJyOEZjOTMrMlE3TjdEMTVmL1Q3TGV5K2VmM3I4NWQxUHp4ZDNmMkxuMnk5dXhWdy8vU1J2VmwvOTNxL2FYM1QzMVEvT2Zxb3V6bjdxdUZ4OXQvN3A3N3o5NmQ5cmRicjRmWnFmbkwvNjRtWHhFK3UzUDV2TWxUN05wMHIyYmZ0cmZLblRrZlNIeUZnRCtBM3JxV2g3WmFqZk9tQ292L1JyTU5UQno3YUJ1L3hGdTkrWnpIN3E2ZS96RTk5ZWY5NjgvdmJiMytzWHZYcHh1L0F0TDc3Nzl2d0hENzd6ZzgvZmZ2dTdkNStmVGI3N2UzMW44WEplVHFjLzJObC9VUHdzTXRFWVZGL2tiQjEyMHFHMVQwZkJIeUwvOUZIYm9JODZUWlZyZnBzUGlNNzJpUEwzNlBsWjVwcUQxNy9QK1hlK09KaGZuL3hFbHI5OCtvdStPcjNmN3R4S0RiMm8yeWV6NTYrcjMvdmc1RWx6Ny9kK05kdjU5c3ZmNi9ucTZiZUw2dDFQUFZ6LzFOdHEvWHQ5OGVEMEIyLzNmK0puVXczbGt6cExkOU5ueFRJcjA5TjMyU0o5bFY4VytkVUFJeG1pL2hBWmFSRERRWDRhZWtQWjZyY04yT3F2L2hwc3RiLy9zOHhXNWM1UGZIcnhvcW11di9pcDU5bHUrM3QvVW41Njh2TDRObXgxOE5ON0QzZCs0cXNmL043ckwzWitham45YnZuSjVFRzkra1UvK2RVWEQ1dUR5NTk2KzdQRlNoNnh6NWJuVmIzSTJxSmFidUFpMFBDSHhVVUR5TVVaS041WWVlZTMrNENsMHIyZFQrOC9lSGp2L3M4eTc3ejlpUmZQN3Q3Nzh2U3I4dHZaczI4L3U1OS85OVdzdUIzdi9PQ0xGeTgvMlcyLy9aUG5rMWY3di9mNk81Y1BsL2NRNC8wczhReXIvdTlreXhTNXVkM2RBV1l4UlB0aE1Vc1hxdzFteTdWUzl2anRBL2I0bzc4T2V4ejhMTFBIbS9LNzVlLzE3WGRYcS9yNXRGMTk5WER2OTVyODRNMnQvQnpISHJQNXZlUDYwM0w2c25qNHcyQ1AzZjN0M1lOTjNISHdjOEFkZ3RRTnpNR05sRGQraHcvaGpkM2RnNE9EaHovYlB2RHkyd2UvNkxzLytLa1hiN0ozcTBYNzVYZS9PL2w5ZHVwYmVUT09OL0ozTzkvZXZmL201VTYrUFA0aDhBWVdpZTdIZWNQUzdJZk9HNExVRGJ6QmpaUTNmc2VBTi83TTkrU04vZjJkbmQyZmJaZGs4dkwzS1EvdVh4V2ZmdWZwZy9yNTI0ZXpUMTQzejI1bFZ2WmVUK2VUODN2NTZxZWIyUy82d2ZIWjcvUHU3azkvcHowK2UvWDA3T3J0OCtmUEhZOTg0endpaEQ3WWZwWlAwZ0g3WXFuM1ErU1NFSzNoa05wdnBwenlPd1djOGtkOEhVNzUyVjZ4YW45dy9YdnZuQjRmZlBmMDZjNFhzOWY1SiszT2QzNXdLeTN5NUt0eSt2c1UxMWNIazh1WDMzNzVxbnk3KzN2bDk2NStWclZJQ3VMdWt3MGZNRENXWkQ5TTluQTREZk9HYmFPTThUdC9rQW81Mk5tL3QvZXp6UmhmMEJ6LzNzdko0dE52TDU5KzFhN2ZmREdaL3VRbnQzSTlQam1ucGZUSmwxL2R2L3YyMjlXTG4xcWNQM2w3V2xQMmIvZk5UKzQrdUhyN2kzNFdHV1FNU28vSnhTTTNiOGpRR09yOUVIa2tSR3VEcWZHYUthZjhnZzl4UlBaMmQzYnYvNnpITUQvSVYxLytvdGRYRDRxOWgzZS84K1RnOXo3NXp2MmZ2THdWcDd3b2Z2cms5LzY5UHBsOHZ2ZTZmZkhGVDE2dHNzWGw3L096NjRnb2lRKzI5L2JpL0dGcDlrUGtEeCtwalVwRUd5bHYvQzRmc0JLSmNkNjcvN01ld0x4Y2ZQZjVkOC96ZGZIdDVWZnZIajc4aWJzdlR0NGMzNG8zUFBNeSs0bWYvRzcxKzF3V24zNys0c0c3MTNkUGZ1K2QzWi80OXM4eWo2Ujc5N2ZUTDdKNk9oL3lSU3dCZjhpTUVtQzIyZVI0TFpWbDBnL3hTUGJ1N1Q1OHNML3pzOHd5RC9LcytPVExkMitlZm41NTlvdCs4SHU5dlBxMCt2VDN1cFZIOHZ1YzVHVjVyNmhPWDg4ZlBGZy9PUGhGbnk5ZUh2eHNlaVRQUDFmeTdtOFBlQ1NXWkQ4MEpnbHdHbUFQdjQweXh1LzZJUjdKM3IzN08yUlZmNVlaNC9kdTIrOSs5d2ZWVDMzMzRNdlpUMzc1OU9GaTh1N0YyYTBZWTNkeHR2cml1MWZ0MC9WUDc3VFQrNisvK3NubStlS25Qbm03K09UZHlmUDY5L3JPenhxRGtCeXEvQjFzcDRNV3gxRHZoOFlqWGJTR3RZamZURG5sbzRCVC9ycjM1WlNIOXc4ZVBQaFo1cFNkVDljWEI4WHgwOU43cStsUG5YMlIvZlMzcjY2dmI4VXB2K2p5cDU4dmxnYy9jZkI3M2Iwb3I3NzlORHYvL08xUHZwei9QdG5ibnp6KzRpZC9ZdTluazFOMmxkclEyc2VydWlqVEFSZldFdkdIeVRBeDdJYjVKdEphMmVmSFAwalJQS0RWaUovMTFlWGRuMzU1ZHJMejhQVGI4L05sZG54Ly96dS82TTNyZzUrNERmdnNUVjk4L3Z2c3ROLzV2Y3Y3UDhoKzc3c1BKM2ZQbWs4L2ZmN2w2MjkvVVg3MzVCZGxQN3ZzSTRRKzJONGRValNHZWo5Y3Z2SFEyc1F3cnBseXl1OFdjTXFmODc2Y2NwOFcwbisyUTUrZnZ2enAvZm5CeVlQcTAvbjVUNjYrZUZpOWZmTlRQM1c3UEp2bGxQMnZ5cGUvNlBjNi9mWVhzNHNzLzBYM3IrdFBYNzc4aVdjL0RFN1p2YjlOeVpJQlZsSHkvVnl3aXVCMU02OXdPMldXMy8yRG1PWGczdTZuT3ovYnNkQlY5blo2NzhrbisxZXZmOUhKZC9lVzladjJ6ZSsxdnBWVjhwamxZcm03ZlA2RGk5Lzc4OTJuaXlmbDIxZWYvNkpmdFBORFlSWmt3RDhkWUJaRHZwOExaaEc4Ym1ZV2JxZk04Z3NEWnZtWDNvOVo3dTArMktjY3djOHlzMHgrY1BYeXA3LzkvTzN6VDM3d25lbDNyc3FMNmRtVC9GWTI2QWV6NnZycTNwZnpUNTdjeTZvdnY4dy9XVlE3cjNhKzgvcjQ5UGY2OVBtM1A1MWw5eWYzenM3di9UN2ZMazkvOWlJakpMT1U3dmUzdjhpdTA5MmQ5UFRMay9SVmZsbmtWM0Uyc29UOUliTFJSaXczSk9xRzMxSVcremhnc1QvdVBWbHM3LzZuRHgvdS9TeXoyTE5sOXNsUFBNbmV6dHZUNy96MGV2bDczYysrYzNWOUsrUGx2T1JQVG43d2kxNys0S2NXMWVXcm44MUFXejFLSXZXOTdiMmRBZll4UlBzaHNrK0ExV1p2V0ZzcGUyd0Y3UEgzdmk5N0hIeTZ2L096dlliNDZkMzVnOTNtNmVYYnA4dFBpa1Y1TUgveSs3eTR1bFhxN3RtOTAyVnh0Zjk3ZmZ1VGszZXJIN3o3N25yL2JmbmQvUFZQZmY1bXVwcnQvS0luWCt5OCtYMTJaai8xNU1IdlhmMnNzY3hyRXRBbFpjR0taVmFtcCsreXhXYlZZeWo2dytLZFFmVGlURFRVWExucDEyRSsrckc1OEpSeUZ2MzRCYjkrdFR3QjlYN2RQLzNYclBOMlhTOVRTN3J2RnN0WmRiVTFOSkl1NHp3cHE0dFhyMThMajB6b0Q1cW83ZjFmK08zZTdOMGpZdTRmL01JVmNYUHg3ck44ZlpFdmk2ek1tcmNmano0R2tJOXB1dTZiNlpyOVdyK0Jpc0N2czNPd3QwOUQrVEhDKzljNTF3KzNmakt2bTZLaWRkWHhwd2ZqM2ZIdTd2MjkrelQwTXMrSW5Pbk93ZDJkQjNmM2RuYnYwWXRHbG43aFAvSlhweWZWNnJvdUx1WnR1cmV6ODREVzNhak4zaWc5bGZHbHo1K2ZqR2V6L3ljQUFQLy9ZRVJNL2NCK0FBQT1kEMA8g0eRRQslSwSG52nAQf0owKM=" />
+
+<link type='text/css' rel='stylesheet' href='/Style/Global.css'></link>
+        <div id="dvToolTip" style="position: absolute; display: none;" class="LNBTooltip">
+            Tool tip will be displayed here
+        </div>
+        <div style="position: absolute; display: none; left: 0px; top: 0px" id="dvAjaxLoader">
+            <img src="/Images/ajax-loader.gif" alt="Loading...." />
+        </div>
+        <!-- New added Style -->
+        
+        <table cellpadding="0" cellspacing="0" class="containerTbl">
+            <tr>
+                <td>
+                    <div class="bodyContainer">
+                        
+                        <div class="headerContainer">
+                            <div class="headerShape"></div>
+                            <span class="logoContainer">
+                                <a id="ctl00_instHref" target="_blank" title="CYPRESS-FAIRBANKS ISD">
+                                    <img src="http://image.epsilen.com/Handler/InsImageHandler.ashx?userType=cZPZN/8kmIE=&hostID=/9hBT3OGLJo=&tocken=GFOi1wp34UMLzrhFzTihaftySF29rAD2HNU9X0nXpkxUgBpe/H4Qn3w5KFJWjF5SGKQh7kMyWU0CSi1MoQ5QSg==&ext=43MErnAet40=&Refresh=8XyGf7Y098U=" id="ctl00_imgEpsilenLogo" alt="epsilen.com" vspace="3" width="164" height="48" onerror="logoMissing(this);" />
+                                </a>
+                            </span>
+                            <div id="ctl00_dvWelcomeHeader" class="welcome_linkContainer">
+                                <div class="welcome_linkContainerShape"></div>
+                                <div class="welcome_linkContaint">
+                                    <span id="ctl00_lblUserName" class="welcomeName">EUGENIA LASKOWSKI</span>
+                                    <span class="modiDate">
+                                        <span id="ctl00_lblLastModifiedHead">Last Modified:</span>
+                                        <span id="ctl00_lblLastModified" class="modiDateVal">05/21/2013</span>
+                                    </span>
+                                    <span class="publicUrl">
+                                        <a id="ctl00_hlPublicURL" title="Public site URL" href="http://www.epsilen.com/eugenialask">http://www.epsilen.com/eugenialask</a>
+                                        <span id="loadTime"></span>
+                                    </span>
+                                    <div class="accessView" nowrap="nowrap">
+                                        <span id="ctl00_lblViewHead" class="currentViewLbl">Current View:</span>
+                                        <span id="ctl00_lblView" class="currentView">Public</span>
+                                        
+                                        <span id="ctl00_divNavigateToPublic" class="currentView" style="display:none;">
+                                            |
+                                            <span><a id="ctl00_lnkNavigateToPublic" href="javascript:__doPostBack(&#39;ctl00$lnkNavigateToPublic&#39;,&#39;&#39;)" style="text-decoration: underline;"></a></span>
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div id="ctl00_dvAccessKey" class="accessContainer">
+                                <div id="ctl00_dvAccessKeyContents" style="position:absolute">
+                                    <div style="position:absolute;left:-40px;top:5px">
+                                        <img id="ctl00_imgAccessKeyKey" src="Images/accessKey.png" border="0" /> 
+                                    </div>
+                                    <span><span id="ctl00_lblAccessKeyHead" class="accessTxt">Access Key</span></span>
+                                    <br />
+                                    <span><a onclick="return openPopupWindow(&#39;http://www.epsilen.com/Global/CommonHelpPopUp.aspx?title=sGxuD1n419yc8jwQiKHHjA==&#39;,&#39;&#39;,350,600);" id="ctl00_lnkAccessKeys" title="Click to view What is Access Key?" href="javascript:__doPostBack(&#39;ctl00$lnkAccessKeys&#39;,&#39;&#39;)">What is Access Key?</a></span><br />
+                                    <span><input name="ctl00$txtAccessKey" type="password" id="ctl00_txtAccessKey" class="accessInput" onKeyPress="JavaScript:onAccessKeyPress(event);" /></span>
+                                    <span><a onclick="return ValidateAccessKey();" id="ctl00_btnGoNew" title="Click to Submit Access Key" class="accessGoLink" AlternateText="Submit Access Key" href="javascript:__doPostBack(&#39;ctl00$btnGoNew&#39;,&#39;&#39;)"></a></span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                        <div class="containtContainer" style="padding-top:.5em">
+                            
+                            <div class="LNB lnbBg" id="lnb_Menu">
+                                <a ToolTip="View ePortfolio of this member" onmouseover="ShowPublicTooltip(this)" onmouseout="HidePublicTooltip();"  runat="server" href="http://www.epsilen.com/MyPortal/Public/../Public/Home.aspx?prefix=eugenialask&ToolID=238&systemName=PerPublic_Home" id="hrefPerPublic_Home"><img src="/Images/Icons/InstAdminIcons/icon_lnbHome.gif" alt="" align="left" onerror="JavaScript:showDefaultIcon(this);" runat="server"/> Home</a>
+
+<a ToolTip="View <b>ShareIt</b> objects of this member" onmouseover="ShowPublicTooltip(this)" onmouseout="HidePublicTooltip();"  runat="server" href="http://www.epsilen.com/MyPortal/Public/../Public/ShareIt.aspx?prefix=eugenialask&ToolID=239&systemName=PerPublic_ShareitViewFiles" id="hrefPerPublic_ShareitViewFiles"><img src="/Images/Icons/icon_shareIt.gif" alt="" align="left" onerror="JavaScript:showDefaultIcon(this);" runat="server"/> ShareIt</a>
+
+<a ToolTip="Links" onmouseover="ShowPublicTooltip(this)" onmouseout="HidePublicTooltip();" runat="server" href="http://www.epsilen.com/MyPortal/Public/CustomTab.aspx?tabID=37627&prefix=eugenialask&systemName=Links" id="hrefLinks"><img src="/EpsilenClient//Images/Icons/CustomMenuIcons/icon_MenuComputer.gif" alt="" align="left" onerror="JavaScript:showDefaultIcon(this);" runat="server"/> Links</a>
+
+<a ToolTip="Notes,Claswork and Homework Information" onmouseover="ShowPublicTooltip(this)" onmouseout="HidePublicTooltip();" runat="server" href="http://www.epsilen.com/MyPortal/Public/CustomTab.aspx?tabID=37631&prefix=eugenialask&systemName=Notes,Claswork and Homework Information" id="hrefNotes,Claswork and Homework Information"><img src="/EpsilenClient//Images/Icons/CustomMenuIcons/icon_MenuEdit.gif" alt="" align="left" onerror="JavaScript:showDefaultIcon(this);" runat="server"/> Notes,Claswork ..</a>
+
+<a ToolTip="6 Weeks Calendar" onmouseover="ShowPublicTooltip(this)" onmouseout="HidePublicTooltip();" runat="server" href="http://www.epsilen.com/MyPortal/Public/CustomTab.aspx?tabID=37634&prefix=eugenialask&systemName=6 Weeks Calendar" id="href6 Weeks Calendar"><img src="/EpsilenClient//Images/Icons/CustomMenuIcons/icon_MenuStar.gif" alt="" align="left" onerror="JavaScript:showDefaultIcon(this);" runat="server"/> 6 Weeks Calenda..</a>
+
+
+                                <a href="http://www.epsilen.com/Security/Login.aspx" id="ctl00_hrefLogin"><img src="/Images/Icons/MyPortalPublicIcons/icon_lnbLogin.gif" alt="Click to login" title="Click to Login" align="absmiddle" />Login</a>
+                            </div>
+                            
+                            <div class="contentArea">
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                        <td valign="top" style="width: 98%; padding-right: 10px; height: 414px;" id="dvContainer">
+                                            <div id="dvPersonalPublicContentArea" style="overflow:auto;overflow-y:hidden;">
+                                                
+    
+    <script language="javascript" type="text/javascript">
+        var baseURL = 'http://www.epsilen.com';
+        function onImageMissing(obj)
+        {
+            var rootPath = baseURL + '/images/noMembersBig.jpg';
+            obj.src=rootPath; 
+        }
+        function openAlbumViewer(contrl)
+        {
+            var urlForAlbumViewer = contrl.getAttribute("URLForAlbumViewer");
+            return openPopupWindow(urlForAlbumViewer,'AlbumViewer',650, 650, '');
+        }
+    </script>
+
+    <script language="javascript" type="text/javascript">        
+        var currentFadePercentage = 100;
+        var currentPictureIndex = 0;
+        function setOpacity(obj, opacity) 
+        {
+            opacity = (opacity == 100)?99.999:opacity;
+            // IE/Win
+            obj.style.filter = "alpha(opacity:"+opacity+")";
+
+            // Safari<1.2, Konqueror
+            obj.style.KHTMLOpacity = opacity/100;
+
+            // Older Mozilla and Firefox
+            obj.style.MozOpacity = opacity/100;
+
+            // Safari 1.2, newer Firefox and Mozilla, CSS3
+            obj.style.opacity = opacity/100;
+        }    
+
+        function FadeInImage()
+        {
+            var objFadeImage =document.getElementById('ctl00_cphMain_imgUserPic');
+            if(currentFadePercentage<100)
+            {
+                currentFadePercentage+=10;
+                setOpacity(objFadeImage, currentFadePercentage);
+                setTimeout('FadeInImage()', 1);
+            }
+            else
+            {
+                var fadingElement = document.getElementById('ctl00_cphMain_lblPictureCounting').getElementsByTagName('a');
+                for(var i=0;i<fadingElement.length;i++)
+                {
+                    fadingElement[i].setAttribute('clickEnable', 1);
+                }                                            
+                
+                if(document.getElementById('ctl00_cphMain_dvNextPrev'))
+                {
+                    var dvNextPrevElement = document.getElementById('ctl00_cphMain_dvNextPrev').getElementsByTagName('a');
+                    for(var j=0;j<dvNextPrevElement.length;j++)
+                    {
+                        dvNextPrevElement[j].setAttribute('clickEnable', 1);
+                    }           
+                }
+            }
+        }
+
+
+        function FadeOutImage(imageSrc)
+        {
+            var objFadeImage =document.getElementById('ctl00_cphMain_imgUserPic');
+            if(currentFadePercentage>0)
+            {
+                currentFadePercentage = currentFadePercentage - 10;
+                setOpacity(objFadeImage, currentFadePercentage);                
+                setTimeout('FadeOutImage("'+ imageSrc +'")' , 1);
+            }
+            else
+            {
+                setTimeout('ChangeImage("' + imageSrc + '")', 100);
+            }
+            return false;
+        }
+    
+    
+        function generateRSS()
+        {
+            var objEpsilenNewsRSSPopup = openPopupWindowwithObject('http://www.epsilen.com/Myportal/public/NewsFeedRss.aspx?RequestType=latest&prefix=eugenialask','News_Feed', 600, 600, 'scrollbars=yes,resizable=yes');
+        }        
+        
+        function OpenWindow(URL)
+        {
+            return openPopupWindow(URL,'ViewVedio', 600, 800, 'scrollbars=yes,resizable=yes');
+        }
+        
+        function ValidateForm()
+        {
+            var errorMsg="";
+            var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+            if(document.getElementById('ctl00_cphMain_txtName').value=="")
+            errorMsg+=' -Your name is required.' + "\n";
+            if(document.getElementById('ctl00_cphMain_txtMessage').value=="")
+            errorMsg+= '- Message is required.' + "\n";
+             if(document.getElementById('ctl00_cphMain_txtEmail').value=="")
+            errorMsg+='- Email is required' +"\n";
+             if((reg.test(document.getElementById('ctl00_cphMain_txtEmail').value) == false)&&(document.getElementById('ctl00_cphMain_txtEmail').value.length>0))
+             errorMsg+='- Email is not valid';
+            if(errorMsg!="")
+            {
+                alert(errorMsg);
+                return false;
+            }
+            else
+            {
+                 __doPostBack('ctl00$cphMain$btnSend','');
+                return true;
+            }
+        }
+        
+        function ChangeImage(imageSrc)
+        {
+            var imgUserPic = document.getElementById('ctl00_cphMain_imgUserPic');
+            imgUserPic.src = imageSrc;
+            imgUserPic.style.visibility = 'hidden';
+            setOpacity(imgUserPic, 0)
+            imgUserPic.style.visibility = 'visible';            
+            setTimeout('FadeInImage()' , 1);            
+            return false;
+        }
+                
+        function fadeImageOut(imageSrc, objClicked)
+        {            
+            if(objClicked.getAttribute('clickEnable')=='1')
+            {
+                var fadingElement = document.getElementById('ctl00_cphMain_lblPictureCounting').getElementsByTagName('a');
+                for(var i=0;i<fadingElement.length;i++)
+                {
+                    fadingElement[i].setAttribute('clickEnable', 0);
+                }                
+                
+                if(document.getElementById('ctl00_cphMain_dvNextPrev'))
+                {
+                    var dvNextPrevElement = document.getElementById('ctl00_cphMain_dvNextPrev').getElementsByTagName('a');
+                    for(var i=0;i<dvNextPrevElement.length;i++)
+                    {
+                        dvNextPrevElement[i].setAttribute('clickEnable', 0);
+                    }
+                }           
+                           
+                currentFadePercentage=100;
+                FadeOutImage(imageSrc);
+                if(objClicked.getAttribute("pictureindex") != null)
+                    currentPictureIndex = parseInt(objClicked.getAttribute("pictureindex"));
+                return false;
+            }
+            else
+            {
+                alert('Please wait for the image to display');            
+            }
+        }        
+        
+        function imageProcessPrev(imgCntrol)
+        {   
+            if(imgCntrol.getAttribute("clickEnable")== '0')
+            {
+                alert('Please wait for the image to display');            
+            }         
+            if(currentPictureIndex > 0 && imgCntrol.getAttribute("clickEnable")== '1')
+            {
+                var imgSRC = imgCntrol.getAttribute("CSVImageSRC").split(',');                        
+                currentPictureIndex -= 1;            
+                fadeImageOut(imgSRC[currentPictureIndex], imgCntrol)
+            }
+            else
+            {
+                alert('You are viewing the first image')
+            }            
+        }
+        
+        function imageProcessNext(imgCntrol)
+        {
+            if(imgCntrol.getAttribute("clickEnable")== '0')
+            {
+                alert('Please wait for the image to display');            
+            }
+            var imgSRC = imgCntrol.getAttribute("CSVImageSRC").split(',');            
+            if(currentPictureIndex < imgSRC.length - 1 && imgCntrol.getAttribute("clickEnable")== '1')
+            {                
+                currentPictureIndex += 1;               
+                fadeImageOut(imgSRC[currentPictureIndex], imgCntrol)                
+            }
+            else
+                alert('You are viewing the last image')
+        }
+    </script>
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td class="contentBgLeft">&nbsp;</td>
+            <td class="contentBg">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td style="width: 120px" class="txtBlue txt11" valign="top">
+                            <div style="text-align: left; padding-top: 3px">
+                                <img src="http://image.epsilen.com/Handler/PerImageHandler.ashx?hostUserAccountID=a5oLbeZxBbo=&pictureID=41w/th/wN6A=&size=3bYTnEtnBOQ=&sHostID=fbuo2DAwP5U=" id="ctl00_cphMain_imgUserPic" onerror="JavaScript:onImageMissing(this)" style="cursor: pointer;" onclick="return openAlbumViewer(this);" class="imgBorder" alt="User&#39;s picture, Click to view User&#39;s Album" title="User&#39;s picture, Click to view User&#39;s Album" URLForAlbumViewer="http://www.epsilen.com/MyPortal/Public/AlbumViewerPopup.aspx?hostUserAccountID=a5oLbeZxBbo=" />
+                            </div>
+                            <div>
+                                
+                                <div id="ctl00_cphMain_dvPictureLinks" style="margin-top: 3px">
+                                    <img src="Images/Icons/MyPortalPublicIcons/icon_pic.jpg" id="ctl00_cphMain_iconAlbum" onclick="return openAlbumViewer(this);" style="vertical-align: middle;cursor:pointer" alt="Click to view User&#39;s Album" title="Click to view User&#39;s Album" URLForAlbumViewer="http://www.epsilen.com/MyPortal/Public/AlbumViewerPopup.aspx?hostUserAccountID=a5oLbeZxBbo=" />
+                                    <span><span id="ctl00_cphMain_lblPictureCounting"><a href='JavaScript:void(0)' title='Click here to preview this picture' clickEnable='1' pictureIndex='0' onclick='fadeImageOut("http://image.epsilen.com/Handler/PerImageHandler.ashx?hostUserAccountID=a5oLbeZxBbo=&pictureID=41w/th/wN6A=&size=3bYTnEtnBOQ=&sHostID=fbuo2DAwP5U=", this)'>1</a></span></span>
+                                </div>
+                            </div>
+                            
+                        </td>
+                        <td valign="top" class="lineHeight20">
+                            <span><span id="ctl00_cphMain_lblName" class="txtBlue txt17 lbl">EUGENIA LASKOWSKI</span></span>&nbsp;
+                            
+                            <span><span id="ctl00_cphMain_lblPrimaryTitle" class="txtBlue lbl"></span></span>
+                            <span><span id="ctl00_cphMain_lblSecondaryTitle" class="txtBlue lbl"></span></span>
+                            <br />
+                            <div id="ctl00_cphMain_divPrimaryEmail">
+                                <span><span id="ctl00_cphMain_lblEmailPrimary" class="lbl">Primary Email:</span></span>
+                                <a href="mailto:eugenia.laskowski@cfisd.net" id="ctl00_cphMain_lnkPrimaryEmail" style="display: ;">eugenia.laskowski@cfisd.net</a>
+                                <img src="Images/Icons/icon_lock.gif" id="ctl00_cphMain_imgPrimaryEmailLock" title="Primary email is locked" alt="Primary email is locked" style="display:none;" /><br />
+                           </div>
+                           
+                           <div id="ctl00_cphMain_divMajorMinor" style="display:none">
+                            <div id="ctl00_cphMain_divMajor" style="display:none;">
+                            <span><span id="ctl00_cphMain_lblMajorDegree" class="lbl">Major Degree:</span></span>
+                            <span><span id="ctl00_cphMain_lblMajorDegreeValue" style="display:none"></span></span>
+                            <br />
+                            </div>
+                            <div id="ctl00_cphMain_divMinor" style="display:none;">
+                            <span><span id="ctl00_cphMain_lblMinorDegree" class="lbl">Minor Degree:</span></span>
+                            <span><span id="ctl00_cphMain_lblMinorDegreeValue" style="display:none"></span></span>
+                            <br />
+                            </div>
+                           </div>
+                            <table id="ctl00_cphMain_tblPhoneDetails" width="100%" border="0" cellspacing="0" cellpadding="1" summary="Table contains controls to display Home and Office address">
+	<tr>
+		<td>
+                                        <span id="ctl00_cphMain_divHome" style="margin-right:10px;display:none;">
+                                            <span><span id="ctl00_cphMain_lblHome" class="lbl">Home Phone:</span></span>
+                                             <span><span id="ctl00_cphMain_lblHomePhoneValue" style="display: none;"></span></span>
+                                             <img src="Images/Icons/icon_lock.gif" id="ctl00_cphMain_imgHomePhoneLock" align="absMiddle" title="Home phone number is locked" alt="Home phone number is locked" />
+                                        </span>
+                                        <span id="ctl00_cphMain_divCell" style="display:none;">
+                                           <span><span id="ctl00_cphMain_lblCell" class="lbl">Cell Phone:</span></span>
+                                             <span><span id="ctl00_cphMain_lblCellValue" style="display: none;"></span></span>
+                                        <img src="Images/Icons/icon_lock.gif" id="ctl00_cphMain_imgCellPhoneLock" align="absMiddle" title="Cell phone number is locked" alt="Cell phone number is locked" />
+                                        </span>
+                                    </td>
+	</tr>
+	<tr>
+		<td>
+                                        <span id="ctl00_cphMain_divOffice" style="margin-right:10px;display:none;">
+                                              <span><span id="ctl00_cphMain_lblOffice" class="lbl">Office Phone:</span></span>
+                                              <span><span id="ctl00_cphMain_lblOfficePhoneValue" style="display: none;"></span></span>
+                                              <img src="Images/Icons/icon_lock.gif" id="ctl00_cphMain_imgOfficeLock" align="absMiddle" alt="Office phone number is locked" title="Office phone number is locked" />
+                                        </span>
+                                        <span id="ctl00_cphMain_divFax" style="display:none;">
+                                             <span><span id="ctl00_cphMain_lblFax" class="lbl">Fax Number:</span></span>
+                                             <span><span id="ctl00_cphMain_lblFaxValue" style="display: none;"></span></span>
+                                             <img src="Images/Icons/icon_lock.gif" id="ctl00_cphMain_imgFaxLock" align="absMiddle" title="Fax number is locked" alt="Fax number is locked" />
+                                        </span>
+                                    </td>
+	</tr>
+</table>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <a href="javascript:void(0)" id="ctl00_cphMain_hrefLogin" title="View MyCorner (Requires Login)" onclick="return openPopupWindow(&#39;http://www.epsilen.com/Security/Login.aspx?HostUserAccountID=a5oLbeZxBbo=&#39;, &#39;MyCorner&#39;, 650, 980)">
+                                <img id="ctl00_cphMain_imgViewEportfolio" title="View MyCorner (Requires Login)" src="Images/ViewEportfolio.gif" alt="view ePortfolio" border="0" />
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td class="contentBgRight">&nbsp;</td>
+        </tr>
+    </table>
+    <br />
+    <table id="ctl00_cphMain_tblWelcomeNote" width="100%" border="0" cellspacing="0" cellpadding="0" summary="Table layout for welcome notes" style="display:;">
+	<tr>
+		<td class="contentBgLeft">
+                &nbsp;</td>
+		<td class="contentBg">
+                <div id="ctl00_cphMain_divWelcomeNotes" class="whiteBG" style="margin-top: 5px;">
+                    <div>
+			
+                            <table width="100%">
+                        
+                        <tr>
+                            <td>
+                            <span><span id="ctl00_cphMain_drpWelcomeNotes_ctl01_lblTitle" class="txtBlue lbl">Teaching Interests</span></span>
+                            </td>    
+                        </tr>
+                         <tr>
+                            <td>
+                            <div>
+                                Algebra I, Algebra II, Geometry, MMA
+                            </div>
+                            </td>
+                         </tr>   
+                            
+                        
+                        <tr>
+                            <td>
+                            <span><span id="ctl00_cphMain_drpWelcomeNotes_ctl02_lblTitle" class="txtBlue lbl">Who is Mrs. Laskowski?</span></span>
+                            </td>    
+                        </tr>
+                         <tr>
+                            <td>
+                            <div>
+                                <h2><span style="font-size: 10pt; color: #000000; font-family: Arial">I have been working for Cypress-Fairbanks I.S.D. for over 15. I <span style="font-size: 10pt; font-family: Arial">love working with&nbsp;students and seeing the "light bulb" go off when they grasp a concept for the first time. I taught and led the Algebra I team at Langham Creek High school&nbsp;for 9 years.&nbsp; Looking for some spice in my life, I transferred to Cypress Woods&nbsp;&nbsp;to help open a new high school.&nbsp; I have been teaching math at Cypress Woods now since we opened in 2006.</span></span></h2> <h2><span style="font-size: 10pt; color: #000000; font-family: Arial"><span style="font-size: 10pt; font-family: Arial">I am a&nbsp;native Houstonian and have never ventured far from home</span></span><span style="font-size: 10pt; color: #000000; font-family: Arial"><span style="font-size: 10pt; font-family: Arial">.&nbsp; I am married and have&nbsp;2 children.&nbsp; When I'm not working at Cy Woods, you can usually find me&nbsp;playing with one of my children.</span></span></h2> <h2><span style="font-size: 10pt; color: #000000; font-family: Arial"><span style="font-size: 10pt; font-family: Arial">Academic Background:</span></span></h2> <ul><li><pre><span style="font-size: 10pt; color: #000000; font-family: Arial"><span style="font-size: 10pt; font-family: Arial">B.S. Secondary Mathematics, Sam Houston State University 1997</span></span></pre></li><li><pre><span style="font-size: 10pt; color: #000000; font-family: Arial"><span style="font-size: 10pt; font-family: Arial"><span style="font-size: 10pt; color: #000000; font-family: Arial"><span style="font-size: 10pt; font-family: Arial">B.B.A. General Business, Sam Houston State University 1997</span></span></span></span></pre></li></ul>
+                            </div>
+                            </td>
+                         </tr>   
+                            
+                        
+                            </table>
+                        <table class=" PagerBottom" cellspacing="0" cellpadding="0" border="0" width="100%">
+				<tr>
+
+				</tr>
+			</table>
+		</div>
+                    <span><span id="ctl00_cphMain_lblNoWelcomeNote" class="info" style="display: none;">There are no welcome notes to display.</span></span>
+                </div>
+            </td>
+		<td class="contentBgRight">
+                &nbsp;</td>
+	</tr>
+</table>
+
+    <br />
+    <table id="ctl00_cphMain_tblNews" width="100%" border="0" cellspacing="0" cellpadding="0" summary="Table layout for News" style="display:none;">
+	<tr>
+		<td class="contentBgLeft">
+                &nbsp;</td>
+		<td class="contentBg">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="headMain">
+                            <img src="/Images/Icons/icon_news.gif"  alt="News" align="absmiddle" />
+                            <span><span id="ctl00_cphMain_lblNewsCaption"> News</span></span>
+                            <a href="javascript:void(0);" id="ctl00_cphMain_A1">
+                                <img src="Images/Icons/icon_rssFead.gif" id="ctl00_cphMain_imgRss" align="absmiddle" onclick="generateRSS();return false;" title="Generate Latest News RSS Feed" alt="Generate Latest News RSS Feed" /></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="ctl00_cphMain_divRepeater" class="whiteBG" style="margin-top: 5px;">
+                                <div>
+			<table class=" PagerBottom" cellspacing="0" cellpadding="0" border="0" width="100%">
+				<tr>
+
+				</tr>
+			</table>
+		</div>
+                            </div>
+                            <span><span id="ctl00_cphMain_lblNoNews" class="info" style="display: none">There are no news to display.</span></span>
+                        </td>
+                    </tr>
+                </table>
+                <br />
+            </td>
+		<td class="contentBgRight">&nbsp;</td>
+	</tr>
+</table>
+
+    <br />
+    <table id="ctl00_cphMain_tblQuickNote" width="100%" border="0" cellspacing="0" cellpadding="0" style="display:;">
+	<tr>
+		<td class="contentBgLeft">&nbsp;</td>
+		<td class="contentBg">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="Main table layout for QuickNote">
+                    <tr>
+                        <td colspan="2" class="headMain">
+                            <img src='http://www.epsilen.com/Images/Icons/icon_quickNote.gif' alt="Quicknote image" align="absmiddle" />
+                            <span><span id="ctl00_cphMain_lblQuickNote">QuickNote</span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="lbl">
+                            <span><span id="ctl00_cphMain_lblInstruction">Use the form below to send a message to me. </span></span>
+                        </td>
+                    </tr>
+                    <tr id="ctl00_cphMain_trQuickNoteSent" style="display: none;">
+			<td colspan="2">
+                            <span><span id="ctl00_cphMain_lblQuickNoteSent" class="successMsg" style="margin-top:5px;">QuickNote sent successfully.</span></span>
+                        </td>
+		</tr>
+		
+                    <tr>
+                        <td valign="top">
+                            <table width="100%" border=0>
+                                <tr>
+                                    <td>
+                                        <span><span id="ctl00_cphMain_lblQuickName">Your Name: </span></span>
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <span><span id="ctl00_cphMain_lblMessage">Message: </span></span>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span><input name="ctl00$cphMain$txtName" type="text" maxlength="100" id="ctl00_cphMain_txtName" class="inputBox" /></span>
+                                    </td>
+                                    <td align="left">
+                                          <span class="required">*</span>
+                                    </td>
+                                    <td rowspan="3">
+                                        <span><textarea name="ctl00$cphMain$txtMessage" rows="2" cols="20" id="ctl00_cphMain_txtMessage" class="inputBox">
+</textarea></span>
+                                    </td>
+                                    <td align="left">
+                                        <span class="required">*</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span><span id="ctl00_cphMain_lblEmail">Your Email: </span></span>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span><input name="ctl00$cphMain$txtEmail" type="text" maxlength="100" id="ctl00_cphMain_txtEmail" class="inputBox" /></span>
+                                    </td>
+                                    <td align="left">
+                                        <span class="required">*</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <input name="ctl00$cphMain$hdnException" type="hidden" id="ctl00_cphMain_hdnException" />
+                            
+                            <input onclick="return ValidateForm(); __doPostBack('ctl00$cphMain$btnSend','')" name="ctl00$cphMain$btnSend" type="button" id="ctl00_cphMain_btnSend" class="Button" style="width: 75px" accesskey="S" value="Send" />
+                        </td>
+                    </tr>
+                </table>
+                <br />
+            </td>
+		<td class="contentBgRight">
+                &nbsp;</td>
+	</tr>
+</table>
+
+
+    <script type="text/javascript">
+        ShowPublicMenuItemSelected('hrefPerPublic_Home') ;
+    </script>
+
+                                            </div>
+                                        </td>
+                                        <td valign="top">
+                                            <div id="ctl00_sideBar">
+                                                <table cellpadding="0" cellspacing="0">
+                                                    <tr>
+                                                        <td valign="top">
+                                                            <span id="sideBarTab" class="quickLinkTab" onclick="quickLinkClick();">
+                                                                <img id="imgInOut" src="/Style/PublicTheme1/Images/quicklink_button.jpg" alt="QuickLink" style="display: none" title="QuickLink"  />
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <div id="sideBarContents" style="width: 0px; display: none;">
+                                                                <div id="sideBarContentsInner" style="overflow: auto; height: 620px">
+                                                                    <div class="LNB" id="lnb_container">
+                                                                        <div class="arrowlistmenu" id="masterList">
+                                                                            <div id="ctl00_pnlQuickLinks">
+	
+                                                                                <h3 class="h3">
+                                                                                    <a href="javascript:void(0)"  title="QuickLinks" onclick="toggleChannels('divQuickLinks');">QuickLinks (<span><span id="ctl00_lblQuickLinksCount">38</span></span>)</a>
+                                                                                </h3>
+                                                                                <div id="divQuickLinks" style="display: none">
+                                                                                    <span>
+                                                                                            <ul class="subMenu" id="ulQuickLinks">
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl01_hlQuickLink" href="http://www.youtube.com/watch?v=Pd150YT8JXg&amp;feature=plcp" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl01_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;01 What is relation and what is a function</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl02_hlQuickLink" href="http://www.youtube.com/watch?v=8bQirJRI89I&amp;feature=relmfu" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl02_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;02 Linear Functions</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl03_hlQuickLink" href="http://www.youtube.com/watch?v=1vMxskth4M8&amp;list=UUextJAj19qqL0QFiAkf3l5Q&amp;index=131" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl03_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;14 Solving Systmes by Graphing</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl04_hlQuickLink" href="http://www.youtube.com/watch?v=ZlyEYSigblY&amp;list=UUextJAj19qqL0QFiAkf3l5Q" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl04_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;15 Solving Systems by Substituion</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl05_hlQuickLink" href="http://www.youtube.com/watch?v=zRLCYhUoQXU&amp;list=UUextJAj19qqL0QFiAkf3l5Q" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl05_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;16 Solving Systems Linear Combination/ Elimination</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl06_hlQuickLink" href="http://www.youtube.com/watch?v=LYmSK2Nzq84&amp;list=UUextJAj19qqL0QFiAkf3l5Q" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl06_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;17 Systems and Application</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl07_hlQuickLink" href="http://www.youtube.com/watch?v=XAqY7DcTNe8" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl07_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;18 Introduction to Quadratics</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl08_hlQuickLink" href="http://www.youtube.com/watch?v=rz3D3La90Kg&amp;feature=relmfu" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl08_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;19 Quadratics and vertical shifts</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl09_hlQuickLink" href="http://www.youtube.com/watch?v=EqFzu7MRMJA" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl09_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;20 Quadratics - Compresstion and Expansion</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl10_hlQuickLink" href="http://www.youtube.com/watch?v=_9_cloMVeFM" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl10_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;21 Quadratics Practice</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl11_hlQuickLink" href="http://www.youtube.com/watch?v=ahCZiyKL0EY" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl11_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;22 Quadratics Domain and Range and Application</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl12_hlQuickLink" href="http://www.youtube.com/watch?v=NB29oJsH3BQ" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl12_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;23 Quadratics Review for test</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl13_hlQuickLink" href="http://www.youtube.com/watch?v=qkj9wMXFCB8" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl13_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;24. Simplifying Polynomials</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl14_hlQuickLink" href="http://www.youtube.com/watch?v=wapiPVebKWw" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl14_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;25. More Simplyfying Poly Practice</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl15_hlQuickLink" href="http://www.youtube.com/watch?v=OnrHHQdLHN4" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl15_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;26. Multiplying Polynomials Intro</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl16_hlQuickLink" href="http://www.youtube.com/watch?v=3HzU-xb6uXs" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl16_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;27. Multiplying Polynomials with BOX and FOIL</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl17_hlQuickLink" href="http://www.youtube.com/watch?v=qgKuNoiw0gA" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl17_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;28. BOX and FOIL more practice</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl18_hlQuickLink" href="http://www.youtube.com/watch?v=7kP-bzOV-b4" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl18_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;29. Polynomial application</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl19_hlQuickLink" href="http://www.youtube.com/watch?v=84jMvjvCr_k&amp;feature=relmfu" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl19_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;29.  Review for Poly Test</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl20_hlQuickLink" href="http://www.youtube.com/watch?v=D5dXDZDa6v4" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl20_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;30. GCF and Factoring </a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl21_hlQuickLink" href="http://www.youtube.com/watch?v=T_BK7B1e13A" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl21_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;31. Solutions and Factoring</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl22_hlQuickLink" href="http://www.youtube.com/watch?v=mByT9JVjgpI" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl22_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;32. Solve by factoring day</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl23_hlQuickLink" href="http://www.youtube.com/watch?v=A45WhIwZu4I" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl23_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;33. Quadratic Formula</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl24_hlQuickLink" href="http://www.youtube.com/watch?v=5pzotmarWZY" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl24_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;33. Solving Quadratics Mixed</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl25_hlQuickLink" href="http://www.youtube.com/watch?v=bB6vceBFw1A" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl25_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;34. Solving Quadratics Application</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl26_hlQuickLink" href="http://www.youtube.com/watch?v=FoRGkV59B68" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl26_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;35.  Solving more mixed practice</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl27_hlQuickLink" href="http://www.youtube.com/watch?v=8oRL-Pxm_S0" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl27_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;36. Review for Solving quadratics test</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl28_hlQuickLink" href="http://www.youtube.com/watch?v=IlJ28nJezrg&amp;feature=relmfu" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl28_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;03 More Practice on What's Linear</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl29_hlQuickLink" href="http://www.youtube.com/watch?v=bXGl3LXkDLo&amp;feature=plcp" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl29_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;04 PracticeWriting Functions from Process Charts</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl30_hlQuickLink" href="http://www.youtube.com/watch?v=aHQ5jxQiN28&amp;list=UUextJAj19qqL0QFiAkf3l5Q&amp;index=7&amp;feature=plpp_video" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl30_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;05 Writing More Equations from Process Charts </a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl31_hlQuickLink" href="http://www.youtube.com/watch?v=NAKqQCQWWCQ&amp;feature=relmfu" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl31_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;06 Proportional/Direct Variabtion Notes</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl32_hlQuickLink" href="http://www.youtube.com/watch?v=463lhek4W44&amp;feature=plcp" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl32_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;07 Domain and Range Continuous and Discrete</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl33_hlQuickLink" href="http://www.youtube.com/watch?v=iCVNjHYKB7E&amp;list=UUextJAj19qqL0QFiAkf3l5Q&amp;index=137&amp;feature=plpp_video" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl33_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;08 Putting Equations in Slope Intercept Form</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl34_hlQuickLink" href="http://www.youtube.com/watch?v=KEPnOKICfiY&amp;list=UUextJAj19qqL0QFiAkf3l5Q&amp;index=135&amp;feature=plpp_video" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl34_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;09 Putting Equations into Standard Form</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl35_hlQuickLink" href="http://www.youtube.com/watch?v=cmkzdZN9Sy4&amp;list=UUextJAj19qqL0QFiAkf3l5Q&amp;index=132&amp;feature=plpp_video" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl35_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;10 Cover Up Method</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl36_hlQuickLink" href="http://www.youtube.com/watch?v=EV23e-9cJQU&amp;list=UUextJAj19qqL0QFiAkf3l5Q&amp;index=13&amp;feature=plpp_video" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl36_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;11 Writing and Graphing 1 varibale inequatlities</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl37_hlQuickLink" href="http://www.youtube.com/watch?v=HMZBxQteOnk&amp;list=UUextJAj19qqL0QFiAkf3l5Q" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl37_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;12 Linear Inequalities</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a id="ctl00_rptQuickLinks_ctl38_hlQuickLink" href="http://www.youtube.com/watch?v=B3nnp8QhIaI&amp;list=UUextJAj19qqL0QFiAkf3l5Q" target="_blank">&nbsp;<img id="ctl00_rptQuickLinks_ctl38_imgBullet" src="Images/bullet.gif" align="absmiddle" border="0" />&nbsp;13 Inequalities Review</a>
+                                                                                            </li>
+                                                                                        
+                                                                                            </ul>
+                                                                                        </span>
+                                                                                </div>
+                                                                            
+</div>
+                                                                            
+                                                                            
+                                                                            <div id="ctl00_pnlSharedObjects">
+	
+                                                                                <h3 class="h3">
+                                                                                    <a href="javascript:void(0)" title="Shared Objects" onclick="toggleChannels('divShareObjects');">Shared Objects (<span><span id="ctl00_lblSharedObjectsCount">40</span></span>)</a>
+                                                                                </h3>
+                                                                                <div id="divShareObjects" style="display: none">
+                                                                                    <span>
+                                                                                            <ul class="subMenu" id="shareObjectList">
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl01_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_2405062' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=HGPJIinhN3o=&isLocked=TUUJ2N3TMU0=&folderName=31g6VtjE9xw=&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Public'><img id='imgFolder_2405062' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Public' align='absmiddle' /> Public</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl02_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_10891239' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=TlpgBk1OJJJU172SeiC3mg==&isLocked=TUUJ2N3TMU0=&folderName=NrtBdLSoX8DqSuI/IrE8z/HEQjmwkGhGgEQnQpTnyaY=&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Algebra Opening Day Information'><img id='imgFolder_10891239' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Algebra Opening Day Information' align='absmiddle' /> Algebra Opening Day Information</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl03_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_10891258' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=GjO4M4wth9X2Nl8iGgIaZA==&isLocked=TUUJ2N3TMU0=&folderName=NrtBdLSoX8AG4Rvn3tZeOQFh3u6+nGRTUlt9p+JxRII=&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Algebra ClassworkHomework '><img id='imgFolder_10891258' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Algebra ClassworkHomework ' align='absmiddle' /> Algebra ClassworkHomework </a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl04_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_11006488' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=W4EQpxH3B6/Lj7NTudbk5A==&isLocked=TUUJ2N3TMU0=&folderName=NrtBdLSoX8AOSitwdrAlCPyqVVs61OMRN7IPIwWYAAQ=&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Algebra 6 Weeks Calendar'><img id='imgFolder_11006488' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Algebra 6 Weeks Calendar' align='absmiddle' /> Algebra 6 Weeks Calendar</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl05_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_11006495' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=WoNc5a56ono0v/pu0y1d7Q==&isLocked=TUUJ2N3TMU0=&folderName=BzFuIi1sm8o86/JH2WhorQ==&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Graph Paper'><img id='imgFolder_11006495' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Graph Paper' align='absmiddle' /> Graph Paper</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl06_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_11014544' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=gdzkDgIU2TlpLJk8SIz0wA==&isLocked=TUUJ2N3TMU0=&folderName=lIoHkzfakOgZeWY1o89O0uPLkywS+vwY&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Alg August 27-31'><img id='imgFolder_11014544' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Alg August 27-31' align='absmiddle' /> Alg August 27-31</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl07_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_11014545' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=y86IKGe4VRrW1fNq1BMolg==&isLocked=TUUJ2N3TMU0=&folderName=LsUSThbfdljeHzNN45fA7Rto1hG+chHd&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Alg September 4-7'><img id='imgFolder_11014545' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Alg September 4-7' align='absmiddle' /> Alg September 4-7</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl08_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_11014546' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=V//DjqFjWzkvmDDHxMmctw==&isLocked=TUUJ2N3TMU0=&folderName=LsUSThbfdlgQVawHTeAMEnE4KYMDf7Mv&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Alg September 10-14'><img id='imgFolder_11014546' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Alg September 10-14' align='absmiddle' /> Alg September 10-14</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl09_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_15340297' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=SJcISu5Q68Q/aGCQLm+tng==&isLocked=TUUJ2N3TMU0=&folderName=LsUSThbfdljklPoQbJ+2hTK9bJBmBCb+&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Alg September 17-21'><img id='imgFolder_15340297' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Alg September 17-21' align='absmiddle' /> Alg September 17-21</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl10_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_15345669' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=Wh2zEDvjxJ1SisTi8oEh/g==&isLocked=TUUJ2N3TMU0=&folderName=LsUSThbfdljU+aDvKb2UsMvkL7nZLb5Z&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Alg September 24-28'><img id='imgFolder_15345669' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Alg September 24-28' align='absmiddle' /> Alg September 24-28</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl11_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_16489971' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=a2uPPvoHEmBqx7jpAkoVBw==&isLocked=TUUJ2N3TMU0=&folderName=GGH2JG+AZF1IACYU4emy0w==&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Alg October 1-5'><img id='imgFolder_16489971' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Alg October 1-5' align='absmiddle' /> Alg October 1-5</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl12_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_17302373' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=aFZV4jFkCHrG31qcF7LliQ==&isLocked=TUUJ2N3TMU0=&folderName=GGH2JG+AZF19xrrruVrWP31FcNdy8jzL&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Alg October 8-12'><img id='imgFolder_17302373' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Alg October 8-12' align='absmiddle' /> Alg October 8-12</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl13_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_17427751' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=tkhX3J/7Nt8mj5KdHAnP1Q==&isLocked=TUUJ2N3TMU0=&folderName=GGH2JG+AZF258wIp3jzqfiOjB/ygcUKV&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Alg October 15-19'><img id='imgFolder_17427751' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Alg October 15-19' align='absmiddle' /> Alg October 15-19</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl14_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_18050202' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=nF5TI0nxRv2y3npNfL9Yaw==&isLocked=TUUJ2N3TMU0=&folderName=GGH2JG+AZF3Huzv9uVDzB1KnHzm3p5TK&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Alg October 22-26'><img id='imgFolder_18050202' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Alg October 22-26' align='absmiddle' /> Alg October 22-26</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl15_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_18050236' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=vvw52KkXC8GpBZ3JsGeumw==&isLocked=TUUJ2N3TMU0=&folderName=GGH2JG+AZF10dR6TDdQ/JDQhURehaKKqyYnCLpYOalw=&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Alg October 29 - November 2'><img id='imgFolder_18050236' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Alg October 29 - November 2' align='absmiddle' /> Alg October 29 - November 2</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl16_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_18683309' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=Dr+VAX8KgaNkMtUDEvZP6Q==&isLocked=TUUJ2N3TMU0=&folderName=D6mo1RfhGDIZqH/ZPn2PvdOCjqmZvVNsratK082XpUc=&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Alg November 5 - November 9'><img id='imgFolder_18683309' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Alg November 5 - November 9' align='absmiddle' /> Alg November 5 - November 9</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl17_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_18775510' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=KfS+eG42My9IN622jDZ4mg==&isLocked=TUUJ2N3TMU0=&folderName=D6mo1RfhGDLS3LGaW+x8mK9+BvUiVGhV&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Alg November 12-16'><img id='imgFolder_18775510' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Alg November 12-16' align='absmiddle' /> Alg November 12-16</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl18_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_18777901' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=RcdWfozwG2f9NfePpvXn7Q==&isLocked=TUUJ2N3TMU0=&folderName=D6mo1RfhGDJ6/SX0Kf8enLxqb1m1OyMm&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Alg November 19 -20'><img id='imgFolder_18777901' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Alg November 19 -20' align='absmiddle' /> Alg November 19 -20</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl19_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_20398126' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=a8rzPpG3kV/KfZRfZ8z8ag==&isLocked=TUUJ2N3TMU0=&folderName=MWeAidEkJ35N6QWOD+TLB1vz5p/GBR/lXuv/Ak1hfdI=&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Alg. November 26- November 30'><img id='imgFolder_20398126' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Alg. November 26- November 30' align='absmiddle' /> Alg. November 26- November 30</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl20_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_20398152' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=37SwYn3NL6AO/6fm/Q0HNg==&isLocked=TUUJ2N3TMU0=&folderName=jBespUXRtq/RzIZriIZAlpWrjJkjKpEmYsVhRMPiQuk=&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Alg December 3-December 7'><img id='imgFolder_20398152' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Alg December 3-December 7' align='absmiddle' /> Alg December 3-December 7</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl21_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_20398181' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=vq1JbdZDYQHuGsSHkKqRNw==&isLocked=TUUJ2N3TMU0=&folderName=GeiWkfz7JzGkHW/LIbWKJmPhlccz047i&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Alg. Decmeber 10 -14'><img id='imgFolder_20398181' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Alg. Decmeber 10 -14' align='absmiddle' /> Alg. Decmeber 10 -14</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl22_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_20473333' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=8SYfJM8hyCQaePDqUE5t0g==&isLocked=TUUJ2N3TMU0=&folderName=NrtBdLSoX8CBs3XRd0HPKLpDHioxZ9uZkouKM7Ezk4Q=&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Algebra 1 Final Exam Review'><img id='imgFolder_20473333' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Algebra 1 Final Exam Review' align='absmiddle' /> Algebra 1 Final Exam Review</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl23_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_20473344' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=l0Q6gNsoyMZLa1tX+l6CPA==&isLocked=TUUJ2N3TMU0=&folderName=8j290QUzXuM0ZncWl+b7rpqVUM9s8vZk&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Final Exam Information'><img id='imgFolder_20473344' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Final Exam Information' align='absmiddle' /> Final Exam Information</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl24_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_20657935' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=kQNF/3OEUlHaFHF5eWRdiA==&isLocked=TUUJ2N3TMU0=&folderName=8zMNP+1tHVfbR4XuJv9n3Q==&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Alg. Jan 9 - 11'><img id='imgFolder_20657935' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Alg. Jan 9 - 11' align='absmiddle' /> Alg. Jan 9 - 11</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl25_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_20657938' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=TlWlKHxwprLctpU92KbzTw==&isLocked=TUUJ2N3TMU0=&folderName=8zMNP+1tHVdh3Ar6lcPi9Q==&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Alg. Jan 14-18'><img id='imgFolder_20657938' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Alg. Jan 14-18' align='absmiddle' /> Alg. Jan 14-18</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl26_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_21188891' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=nH8qWzZNTaxpmtOWWbY0rg==&isLocked=TUUJ2N3TMU0=&folderName=8zMNP+1tHVex0H15TP0enA==&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Alg. Jan 22-25'><img id='imgFolder_21188891' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Alg. Jan 22-25' align='absmiddle' /> Alg. Jan 22-25</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl27_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_21440014' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=bPYl85wi6JD7rLk9d+SsFA==&isLocked=TUUJ2N3TMU0=&folderName=2Schbf3epjsdqzAIYx/jJtAIRDIwkLLL&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Alg Jan 28-Feb 1'><img id='imgFolder_21440014' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Alg Jan 28-Feb 1' align='absmiddle' /> Alg Jan 28-Feb 1</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl28_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_21440019' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=tzyX0EA8WED0MdSe+t0Jzg==&isLocked=TUUJ2N3TMU0=&folderName=BUlcYiyw8bvPHPRlk1Ke3w==&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Alg Feb 4 - 8'><img id='imgFolder_21440019' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Alg Feb 4 - 8' align='absmiddle' /> Alg Feb 4 - 8</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl29_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_21804329' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=MameXnbm6HnDUtuTMbcV+w==&isLocked=TUUJ2N3TMU0=&folderName=+fumwbOU5/kHoNZmfBkErn3N1TV17wkq&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Alg. Feb. 11- 15'><img id='imgFolder_21804329' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Alg. Feb. 11- 15' align='absmiddle' /> Alg. Feb. 11- 15</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl30_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_22101535' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=zepOqSw7i29/JB8XCJ5Vvw==&isLocked=TUUJ2N3TMU0=&folderName=NijCXK+bG2StNMVwpamvYA==&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Alg Feb. 18-22'><img id='imgFolder_22101535' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Alg Feb. 18-22' align='absmiddle' /> Alg Feb. 18-22</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl31_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_22103538' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=PmWLWfeuiHnUx99Q/NCTAw==&isLocked=TUUJ2N3TMU0=&folderName=BUlcYiyw8bvdQVWoYvi6GN7xS/CX01QH&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Alg Feb 25- March 1'><img id='imgFolder_22103538' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Alg Feb 25- March 1' align='absmiddle' /> Alg Feb 25- March 1</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl32_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_22319740' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=7eai+OxTDGvIqzKPw6o6Kg==&isLocked=TUUJ2N3TMU0=&folderName=YCell3ioESh77u78qGmP8w==&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='ALG March 4-8'><img id='imgFolder_22319740' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='ALG March 4-8' align='absmiddle' /> ALG March 4-8</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl33_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_22350043' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=XttWWzoZW8OdVOD9mbxNIg==&isLocked=TUUJ2N3TMU0=&folderName=1mIpMWwtDuj0tc5SUVsLmZ+km+xCLrKJ&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Alg March 18- 22'><img id='imgFolder_22350043' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Alg March 18- 22' align='absmiddle' /> Alg March 18- 22</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl34_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_22395877' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=06ug8iADE3pcZIMajHwyyg==&isLocked=TUUJ2N3TMU0=&folderName=qvjLmn8Q8K/glwHDafGkVPhYakVAMVQ2&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Alg 1 March 25- April 5'><img id='imgFolder_22395877' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Alg 1 March 25- April 5' align='absmiddle' /> Alg 1 March 25- April 5</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl35_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_22747381' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=1jPIC09EHhfnaA54JqTS8Q==&isLocked=TUUJ2N3TMU0=&folderName=2cNGY0tJXl5zaX/9b/Is66LOSHMlWCqa&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Alg 1 April 8-12'><img id='imgFolder_22747381' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Alg 1 April 8-12' align='absmiddle' /> Alg 1 April 8-12</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl36_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_22750395' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=jvj4h8C7o6hfVpM9okTZZA==&isLocked=TUUJ2N3TMU0=&folderName=2cNGY0tJXl4UlPqKEHMdgaeq5yr6PPQF&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Alg 1 April 15-19'><img id='imgFolder_22750395' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Alg 1 April 15-19' align='absmiddle' /> Alg 1 April 15-19</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl37_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_22831608' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=wakc3B+4wSqCW2nrTtTKug==&isLocked=TUUJ2N3TMU0=&folderName=2cNGY0tJXl4gn1nLzgXG1DmBlkRGqq0F&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Alg 1 April 22-26'><img id='imgFolder_22831608' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Alg 1 April 22-26' align='absmiddle' /> Alg 1 April 22-26</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl38_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_23174101' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=bzwPjHLkL+zJcJwlgcIBeQ==&isLocked=TUUJ2N3TMU0=&folderName=zdoyw3Oh+B3aoOOe+mo0R0JSAEK6LH6da5b3If3YHlE=&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Alg. April 25-May 10 EOC Review'><img id='imgFolder_23174101' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Alg. April 25-May 10 EOC Review' align='absmiddle' /> Alg. April 25-May 10 EOC Review</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl39_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_23256992' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=Fna+QBakhtEJjunK5aJwyA==&isLocked=TUUJ2N3TMU0=&folderName=qvjLmn8Q8K+CzqPzZmovRw==&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Alg 1 May 13-20'><img id='imgFolder_23256992' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Alg 1 May 13-20' align='absmiddle' /> Alg 1 May 13-20</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <span><span id="ctl00_rptFilesFolder_ctl40_lblFileFolder"><a href='JavaScript:void(0);' id='lnkFolder_23286404' popupPath="http://www.epsilen.com/MyPortal/Public/FileManager/FileManagerPopup.aspx?folderID=6/h71sDvkDn+iml8hBYNww==&isLocked=TUUJ2N3TMU0=&folderName=F3Eniw4KH+CxpzxWu4klWeSZGTcpd0qBM0TY0dZB7Xo=&hostUserAccountID=a5oLbeZxBbo=" onclick="JavaScript:openPopup(this, 700, 850);" title='Spring Final Exam Review'><img id='imgFolder_23286404' itype='folder' accessKey='public,' src='http://www.epsilen.com//Images/csh_vista/folderClosed.gif' alt='Spring Final Exam Review' align='absmiddle' /> Spring Final Exam Review</a></span></span>
+                                                                                            </li>
+                                                                                        
+                                                                                            </ul>
+                                                                                        </span>
+                                                                                </div>
+                                                                            
+</div>
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div style="height: 100%"></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="height: 100%"></tr>
+                                                </table>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" style="height:20px;" align="right">
+                                            <span><span id="ctl00_lblVisitorCountHead" class="txt12">Visitors: </span></span><span><span id="ctl00_lblVisitorCount" class="txt12">0824</span></span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="footerContainer">
+                            
+
+<div class="footerLogo">
+</div>
+<div class="footerLiks">
+        <a title="Click to open Terms of Service" href="javascript:void(0);" onclick="openPopupWindowwithObject('http://www.epsilen.com/Global/FindoutMore.aspx?RequestType=R8mIpxQP9oDaaAwKSU/RBA==&SettingKey=rj3PlJHt3W2nlasd0jqmRw==', 'TermsOfService', 500, 600, 'scrollbars=yes,resizable=yes');">Terms of Service</a> | 
+        <a title="Click to open Privacy Statement" href="JavaScript:void(0);" onclick="openPopupWindowwithObject('http://www.epsilen.com/Global/FindoutMore.aspx?RequestType=R8mIpxQP9oDaaAwKSU/RBA==&SettingKey=wmE+Tl6LGSg=', 'Privacy', 500, 600, 'scrollbars=yes,resizable=yes');">Privacy Statement</a>, 
+        <span><span id="ctl00_PublicFooterUC1_lblVersion">Version 2.68.1.11525 Released 08/07/2013</span></span>
+        <span><span id="ctl00_PublicFooterUC1_lblCopyright" class="footerCopyright">© Copyright 2007 - 2012, Epsilen LLC.</span></span>
+  
+</div>
+
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <!-- New added Style -->
+        
+    
+<script language="javascript" type="text/javascript">	function __doSort_drpWelcomeNotes(obj) {		var element = document.forms[0]['__SORTBY_drpWelcomeNotes'];		if (element) {			element.value = obj.getAttribute('SortCommand');			__doPostBack('drpWelcomeNotes', '');		} 	}	</script><script language="javascript" type="text/javascript">	function __doPaginateLink_drpWelcomeNotes(page) { 		var element = document.forms[0]['__NEXTPAGE_drpWelcomeNotes'];		if (element) {			element.value = page;			__doPostBack('drpWelcomeNotes', '');		}	}	</script><script language="javascript" type="text/javascript">	function __doSort_drpNews(obj) {		var element = document.forms[0]['__SORTBY_drpNews'];		if (element) {			element.value = obj.getAttribute('SortCommand');			__doPostBack('drpNews', '');		} 	}	</script><script language="javascript" type="text/javascript">	function __doPaginateLink_drpNews(page) { 		var element = document.forms[0]['__NEXTPAGE_drpNews'];		if (element) {			element.value = page;			__doPostBack('drpNews', '');		}	}	</script></form>
+    
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23292102-1']);
+  _gaq.push(['_setCustomVar', 1, 'huaID', 'null', 3]);
+  _gaq.push(['_setCustomVar', 2, 'courseID', 'null', 3]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
+
